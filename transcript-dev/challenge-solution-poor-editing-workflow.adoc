@@ -1,0 +1,79 @@
+= Poor Editing Workflow
+
+I want you to think about a scenario for a moment.
+Imagine you're sitting at your desk hacking away on some code and you receive an e-mail from a programmer colleague.
+The subject line reads, "for your review".
+Curious about what you're being asked to look at, you open the message.
+It contains a bit of text and an attachment.
+The attachment is a Java source file.
+The text says, "I edited this source file to implement feature A and fix bug B. Can you merge it?"
+Just let me ask you, what would be your reaction?
+
+Just as I suspected.
+You're horrified.
+Then why on earth do we let this happen for documentation?
+
+So you're heading over to your colleague's desk.
+What are you going to say to him or her?
+Well, you'll probably say, "you should submit this change as a pull request".
+The same goes for writing.
+Pull requests instead of e-mail.
+
+I want to read an excerpt from the Docs Like Code book that explains how the book was written.
+
+(excerpt)
+
+Now, I don't want to be too hard on these authors, who have created an excellent book.
+They're evolving.
+But you should recognize that they, and many others not as tech savvy as them, could still use your help.
+
+What they are looking for is a contribution workflow.
+Well, we might have a thing or two to say about that!
+
+The bump in their process came when the binary format was introduced.
+The key to being able to work collaboratively is keeping the content in a text-only format.
+Then you can use pull requests to submit changes, just like with the code.
+GitHub even has a feature that allows authors edit the files directly on GitHub and send a pull request on save.
+So that docs stay centralized, they can be versioned (which we'll discuss later), and you have an integrated discussion thread you can use to discuss those changes.
+And what does that lead us to?
+
+Who said "a code review process"?
+Exactly.
+Who needs track changes when you have a full code review system at your finger tips?
+Authors can look a what lines changed, even previewing those changes with a "rich diff", they can comment on a change to seek clarification or request an update, they can approve or decline a set of changes, and they can merge the changes into master or another branch (even applying it multiple times).
+The point is, a code review tool is just as powerful for writing as it is for coding.
+And writers should be leveraging it.
+
+This is all sounding good, but there's one small problem.
+git.
+Writers have to learn git.
+And that can be a little tricky.
+
+(I hate git tweet)
+
+If there were only people that they worked with who know git amazingly well and can teach them.
+Oh, wait.
+So please, if there's nothing else you take away from this talk, please go back and teach your writers how to use git.
+
+Before we wrap up this topic, there's one more thing to address.
+Where do these magical changes to the documentation come from?
+Do code changes just come out of the blue?
+Of course not.
+They stem from issues.
+Again, why shouldn't documentation follow the same process.
+If a change is needed to the documentation, or a new documentation page needs to be written, it should originate with an issue.
+That issue explains the motivation for the change, the acceptance critiera, and anyting else that needs to be discussed.
+It's a system for tracking the work to be performed, the initiatives.
+It can be used to communicate when those changes are due...which implies the use of milestones and some sort of roadmap or issue board.
+Just as issues help shine light on development, issues for documentation shine light on the writing process so it's not such a black box.
+If the writers are using an issue tracker, and you file a well explained documentation request, maybe the result will be that you will have helped birth some new documentation.
+For once, you aren't the one being asked to implement something.
+A nice feeling, isn't it?
+
+If the documentation has an established contribution workflow based on the tools I just mentioned, then the team could enforce that all changes have to go through process.
+No offline editing.
+No emails.
+No binary blobs for content.
+No proprietary, black box editing tools.
+We know that works for development, so it's reasonable to assume that will have a real positive impact on development.
+And please, teach them git.

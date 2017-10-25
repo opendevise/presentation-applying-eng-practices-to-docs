@@ -1,0 +1,39 @@
+* Establish the importance of documentation in software and the dire need to improve it
+
+* Change the dialog by making it clear I'm not asking engineers to write; let writers do the writing
+ ** we're not going to be talking about writing, except for when it intersects with an engineering practice
+ ** deal with the reason why the writers are not writing; or not writing something that works
+
+* Focus on the fact that documentation is just as much of an engineering discipline as software development is (familiar territory), which means engineers are required
+
+* Engineers have a lot of experience & expertise to offer a documentation team; in return the docs team will write your docs for you; symbiotic; lowers the bar to helping w/ docs
+
+* What are the engineering practices?
+ ** (get them thinking about how all this applies to documentation)
+ ** practices are also policies (or lead to policies)
+
+* What are writers' common complaints?
+
+* What practices can we apply to address those complaints and how?
+ ** e.g., a broken link is a compile error
+ ** versions are hard
+ ** *let's focus on creating this list*
+
+* How do you know when you're successful?
+ ** can writers press a button to publish the docs to production? rollback?
+ ** can writers continuously preview their work in progress in a staging area? do they have to set it up each time?
+ ** can a new writer figure out how to build the documentation quickly?
+ ** is everything need to build the documentation in the repository?
+ ** is it easy to contribute a change to the documentation? (could you imagine having to e-mail someone when you want to change the code?)
+ ** are the examples in the documentation in sync with the software and tested?
+ ** are the docs set up so that another team can help the docs team, such as UI developer
+ ** is it easy to figure out who wrote a doc so you know who to talk to when it needs to be updated? "maintainers"
+ ** is it impossible to break the documentation because the process would literally prevent it from happening?
+  *** if it does go wrong for some reason, are writers notified?
+
+* Restate roles
+ ** this is not about turning tech writers into engineers; it's getting tech writers to adopt engineering practices so that they can benefit from the same rigorous process and tools that engineers enjoy; engineers are the ones who have those practices to share
+
+* Conclusion
+ ** I feel strongly that the documentation problem is an engineering problem; writers aren't just being asked to write; they are being asked to solve all these engineering problems that they often aren't equiped to handle; if they could just write, and the documentation project was set up and maintained with engineering practices with the help of engineers, then I think they could just write; and, as a result, we'd see better documentation; software lifecycle would come full circle (close the loop)
+if you are a software developer who is maintaining documentation, why are you not applying the same practices you use for your programming

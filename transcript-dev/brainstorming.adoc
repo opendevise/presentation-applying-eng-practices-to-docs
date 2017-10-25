@@ -1,0 +1,207 @@
+* documentation is an important part of software engineering
+* github survey:
+ ** "Documentation is highly valued, frequently overlooked, and a means for establishing inclusive and accessible communities."
+ ** most annoying issue is Incomplete or confusing documentation (> 90%)
+ ** 93% of respondents complained that most of the documentation is incomplete or outdated.
+ ** -- https://www.infoq.com/news/2017/06/github-survey-open-source
+* documentation is the first aspect of software that people usually encounter
+* helps users understand how to use the software, but also aids with marketing (more on marketing later)
+* in the worst case, documentation can be a boat anchor of a software project
+* "the resistance to documentation among developers is well known and needs no emphasis"
+* "don't try to turn engineers into tech writers or tech writers into engineers"; each has a unique and valuable skill set; learn to work together instead
+* you're not likely any better at writing than a tech writer is at programming
+* but what if I told you that you could help in another way?
+* there are people out there who are willing to write the documentation
+* in fact, they are much more efficient at it than you, because it's what they do
+* writers know their audience and how they reach them
+* they end up costing the project less, so long as what they are doing is focusing on the writing
+* but they are _really_ struggling with the engineering part
+* you could help w/ the documentation simply by sharing your engineering skills
+* it's not just that you can't ship the software w/o documentation
+* it's that the documentation needs to be shipped too
+ ** documentation needs devops
+* documentation needs its own releases, and thus release process
+* the documentation must be a product unto itself
+* documentation is a software project too
+ ** source (code)
+ ** dependencies
+ ** compilation / aggregation
+ ** validation
+ ** testing / QA
+ ** publishing / releases / shipping
+ ** versioning
+ ** documentation (meta!) (meta!) (meta!) (meta!)
+* as an engineering group, your job should be to help writers write; help them help you
+* you don't want them reinventing wheels you've already fashioned
+* frankly, you would be horrified if you know some of the laborious tasks writers were doing manually; or some of the scripts they use (docker, elastic)
+* one brick supporting the weight of the entire back of the house
+* documentation is a challenging engineering problem that you all have the skills to help solve
+* all of these challenges can be overcome by engineers who are willing to help / participate
+* I look forward to hearing ways in which you are solving those problems <- could be concluding statement
+* not just "docs as code"; you need to maintain docs like you maintain code; no shortcuts
+* needs to be taken as seriously as the code
+* what are the practices?
+ ** CI/CD
+ ** static analysis
+ ** testing / validation
+ ** build automation
+ ** scripting
+ ** code generation
+ ** DRY / content reuse
+ ** refactoring
+ ** tooling
+ ** architecture / separation of concerns
+ ** change management / versioning
+ ** infrastructure / devops
+ ** code reviews (editing workflow)
+ ** contribution workflow
+ ** documentation - oh yes, even for docs
+ ** monitoring
+* infrastructure tools
+ ** CI server
+ ** issue tracker
+ ** VCS
+ ** binary repo
+ ** deployment target / server
+* what are the challenges?
+ ** broken links
+ ** no two documentation projects are the same
+ ** staging area
+ ** deployment / promotion (publishing)
+ ** generation (esp setup)
+ ** every is working in the same space; stepping on toes; content aggregation
+ ** how to use git <- if you could do one thing, this would be it; *teach them git*; "is there any way to check for merge conflicts?"
+ ** configuring CI
+ ** writing env / local preview <- story about MuleSoft Chris
+ ** monitoring; knowing what to change and when (check all 5,000 files?) <- story about Alex's "update button"
+ ** manually creating docs which could have be automated (changelogs; API docs)
+ ** migration
+ ** custom extensions
+ ** include sample code (from tested project)
+ ** ship samples
+ ** brittle
+
+== Common complaints to keep in mind
+
+* time-consuming
+* outdated / out of sync
+* unavailable
+* hard to maintain
+* ...
+
+== Engineering practices applied
+
+* testing / validation
+ ** check for broken links (internal & external)
+ ** check for broken images
+ ** check for broken includes
+ ** check for broken syntax
+ ** linter - make syntax adhere to coding standards
+ ** test code snippets; best if they are sourced from a tested project; no-inline code could be enforced by linter
+ ** consistent naming of thinks; files, versions
+ ** bad content structure; content in wrong place
+* monitoring (greenkeeper)
+ ** when does a document need to be revisited
+ ** automate the rote tasks
+ ** look for hard-coded software names and version numbers to be sure they are up to date (or use attributes)
+ ** update generator itself
+ ** notification of updates to software documented by the documentation
+* CI / CD
+ ** ties automated builds, test, releases, & publishing together into single workflow
+ ** one step publishing; just push to publish
+ ** staging environment / branch builds
+ ** local builds w/o requiring web server
+ ** get notified of problems (don't break the build)
+ ** "auto devops" - it just knows what to do / how to configure based on standard project
+ ** history of builds / releases for auditing and troubleshooting regressions
+* automated builds
+ ** precondition for CI / CD
+ ** first step in culture of automation
+ ** host for scripts; described as a task
+ ** one command to preview site
+  *** eliminate manual steps
+  *** no time lost performing manual steps
+ ** validate before push (pre-commit hook)
+ ** different site profiles
+ ** incremental builds
+ ** partial / reduced builds (e.g., microsite)
+ ** wizards to create new files from archetypes; set up new module or component
+ ** package site to transfer or publish
+ ** incorporate changes from workspace
+ ** self-documenting process; no reliance on knowledge of personal or a specific machine or env
+ ** devs can build docs (don't need specialized knowledge)
+* modular architecture
+ ** means dependency management
+ ** content that is versioned together goes together
+ ** git repository should have one version line
+ ** put different versions in different branches
+ ** use a tool to pull content from different repositories and branches together
+ ** store docs w/ the code; doing so _definitely_ necessitates devs & writers working together; sharing processes
+ ** being modular means components can be versioned independently
+ ** might want to consider releasing docs just like software components are released (as opposed to reading from branch)
+ ** separation of concerns; easier to manage ownership & permissions; well-defined boundaries
+ ** integration!!! API docs are not just a one off; tie it together
+* static analysis
+ ** consistency in documentation is critical
+ ** a lot of this consistency can be provided or checked by engineering practices
+ ** prose lint
+ ** shared partials
+// also section on plain text?
+* version control
+ ** docs are a form of source code
+ ** would you put your source code in Dropbox? imagine that case
+ ** don't give documentation a pass just because it's documentation
+ ** maintaining a history is just as important for docs as it is for software
+ ** docs stored in a VCS are more friendly to developers and existing software development processes
+ ** VCS provides a platform for collaboration
+ ** can tap into existing ecosystem of tools, such as git hosting, CI, web publishing, monitoring tools, etc
+ ** what changes? when? rollback. archive. who changed it? what was the reason or trigger?
+ ** branch & tag
+ ** branches work really well for maintaining different versions of docs (at component level)
+ ** branches work better for docs since docs are a commentary on a released version of software; therefore, they will continue to evolve despite the software version being fixed
+ ** docs are _much_ harder to merge because they have so much context and less structure
+ ** storing docs in plain text makes them VCS friendly
+ ** using plain text and VCS for docs gives writers a fighting chance to reconcile divergent docs
+ ** plain text is well suited for creating HTML; document publishing medium is the web
+ ** git hosting provides a means for accepting contributions
+ ** branches provide a way for writers to collaborate on changes & new initiatives (wip docs)
+ ** PR can be used for performing docs reviews; features of markup language can help too, such as line comments
+* DRY / code reuse / code generation / auto-complete
+ ** coming from a non-tech perspective, writers may be inclined to think they have to type every character every time
+ ** as programmers, we know that's preposterous
+ ** think about all the ways you save typing on a daily basis
+ ** every technique or tool that came to your mind just now has the potential to help the writer too
+ ** the first is the include directive, the heart of DRY; don't write the same thing twice
+ ** the include also gets the writers out of the business of embedding / maintaining code snippets in the docs; give them something to include that you control and test
+ ** there are features of the writing language like auto-ids that can save a lot of unnecessary typing
+ ** if a doc is very pattern-oriented, or based on information where the authority lies elsewhere, those docs can and should be generated; guess who the writers need to turn to to generate those docs?
+ ** how much do you rely on auto-complete in your IDE? why can't the writers have this too? a good example is auto-complete of xrefs, attribute names, images, code sample files, and tags inside the included files
+ ** attributes for version numbers, product names, etc
+ ** extract code samples into shared repo
+* workflow: Create new branch > write a new post > make a pull request > the tests pass > merge and publish
+
+== Misc Notes
+
+let's be honest, the state of software projects building the documentation is wild west
+
+developers have tons of goodies that writers lack access to; don't even realize it;
+writers really don't know what their missing;
+often coming from a non-tech background, they may think they have to do a lot of things manually; type every character they want to add; as engineers, we can make life so much better for them
+
+it's important to remember when working with writers that you are working for them;
+if you add process or tools and it slows them down, that's not progress;
+it has to help them or else it's pointless
+
+to me, "docs as code" means that docs are as imporant as code and also that docs are as challenging to maintain as code
+all the same principles that we apply to code could be applied to docs as well
+there are so many similarities
+
+you wouldn't let marketing take over your software project; so why let them run rampant over documentation? easily solved; treat the documentation w/ the same rigor as the software; then, no one will be able to run roughshot over it, marketing or otherwise
+other teams can't just come in and bulldoze
+
+"Docs are generated with DITA OT.
+Technically, we have a forked version of DITA OT.
+As of this writing, we know this exists but we don't quite know why it was forked and it was done without history.
+That's a todo for later."
+
+the worth of a writer: https://twitter.com/mojavelinux/status/831609585937088512

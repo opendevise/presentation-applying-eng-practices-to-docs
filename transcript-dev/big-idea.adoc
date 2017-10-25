@@ -1,0 +1,8 @@
+how do you get better docs?
+documentation stands to benefit greatly from the application of engineering practices, which in turn gives you better docs;
+improve their process, improve the docs; complete the engineering lifecycle
+
+engineers have a role to play in docs, but as engineers;
+let the writers write;
+cross the aisle;
+be a team

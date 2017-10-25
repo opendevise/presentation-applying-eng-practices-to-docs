@@ -1,0 +1,102 @@
+= Challenge / Practice Mapping
+
+* there are broken links and other broken references
+ ** practices: static analysis / linter + continuous integration
+ ** story: humans were put on this earth to break links
+ ** implies that we have a continuous integration process
+ ** implies you have a build
+ ** what about references between versions if there are newer versions available
+
+* have to "go offline" to edit / make a major revision; we can't accept contributions
+ ** practices: contribution workflow
+ ** need an integrated contribution workflow; pull requests instead of e-mail
+ ** need to be able to discuss the changes; integrated discussion thread
+ ** code review process
+ ** there should be a way to track work / initiatives => issue tracker
+ ** decide when changes are due; so implies milestones / roadmap
+ ** apply the change multiple times; "patch"
+ ** could enforce that all changes have to go through this process
+ ** teach them git (https://twitter.com/mairin/status/922799825116106752)
+
+* versions are hard; we haven't figure out how to do versions
+ ** practices: version control
+ ** story: Balsamiq version "solution" (https://www.docslikecode.com/articles/balsamiq-case-study-part-1/)
+ ** version control system is for managing file revisions
+ ** branches were designed for managing different version lines; don't reinvent branches using version folders or file suffix
+ ** content that is versioned together goes together; how to split repositories
+ ** by having versions in branches, you don't have to build all versions
+ ** can protect branches
+
+* too many steps to get a change published
+ ** practices: continuous delivery
+ ** story: James' "branch builds"
+ ** everything between making a change and publishing should be automated
+ ** changes should be detected automatically
+ ** gateway criteria for controlled releases
+ ** a CD process is self-documenting
+ ** implies having a build, but a lot more; configuration as code
+ ** prevents drift between environments
+ ** once production is CD, next logical step is staging (or vice-versa)
+ ** publishing should never be manual
+
+* no two documentation projects are the same; I don't know where any of the files are
+ ** practices: standard project structure
+ ** a standard project structure is recognizable; no snowflakes
+ ** creates a culture of standardization and consistency
+ ** easy to start up the next initiative; you can have project generators
+ ** bring a lot of other stuff for free
+ ** tools can be designed to work with the project
+ ** eliminates much of the configuration effort
+ ** eases content migration
+
+* I can't preview the site locally or on a staging server
+ ** practices: build + CI/CD; containerization
+ ** story: Chris @ MuleSoft
+ ** story: DITA @ Couchbase
+ ** everything needed to build the documentation is stored with the documentation; no "works on my machine"
+ ** no information walks out the door or lives on someone's harddrive; no need for specialized knowledge
+ ** reproducible
+ ** no drift between workspace and production
+ ** easier to onboard, which means contributions more likely, less expensive
+ ** advocates a way of working with the content; everyone is previewing the same way; all get same picture
+ ** avoids long turn around times
+ ** build doesn't just build, it pulls too; sets up the author's environment
+
+* content repository is too large; people are stepping on each others toes; build everything at once
+ ** practice: modularization + maintainers + project metadata
+ ** would you put all your software in one repository
+ ** the idea that there's just one repository of content is not truthful
+ ** content should be split along lines of responsibility; encourages content owners
+ ** can apply different permissions to different areas of content
+ ** smaller chunks are easier to maintain, reuse, and remix
+ ** relationships are easier to understand; can be pulled apart; can reason about circular references
+ ** separate the existence of something with the inclusion of something; means to archive / sunset
+
+* spending all our time making updates
+ ** practices: DRY
+ ** story: we hear from a lot of documentation teams that they are buried in work; no time for new initiatives
+ ** variables for version numbers and product names
+ ** includes for shared content (i.e., partials)
+ ** auto-generate derived content such as release notes, API docs, reference tables, code sample output
+ ** notifications about content needs to be reviewed be of triggers
+ ** templates to create new documents, sections, folder structure
+
+* the samples in the documentation are broken
+ ** practice: DRY + testing
+ ** code samples should be tested
+ ** code samples should be included from shared project (not e-mailed)
+ ** code samples should be separately downloadable (or clonable)
+ ** output from code sample should be inserted automatically
+ ** need a way to tag code to be included
+ ** code samples should be interactive
+ ** user failure triggers a workflow to review / update the document, and in particular, the example (treated as bug)
+
+* other teams are bulldozing our project; breaking things; making changes without approval
+ ** practice: development process + governance
+ ** if there are strong rules in place, backed up by automation, people will be unable to break them
+ ** this happening is often a sign of a process that is breaking down; so just having a process solves this issue in part; people undermine because the process is breaking down or there is no process
+ ** gives the project stability
+ ** understood guidelines
+ ** works even if personnel changes; supercedes personnel
+ ** no one to blame if the process is not enforcing
+ ** don't give docs a pass just because they are docs

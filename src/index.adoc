@@ -1,0 +1,12 @@
+= Applying Engineering Practices to Documentation
+Dan Allen
+:!sectids:
+:imagesdir: images
+:source-highlighter: coderay
+:coderay-css: style
+
+== A
+
+== B
+
+== C
