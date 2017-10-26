@@ -1,11 +1,45 @@
 = Challenge / Practice Mapping
 
+* too many steps to get a change published
+ ** practices: continuous delivery
+ ** story: James' "branch builds"
+ ** everything between making a change and publishing should be automated
+ ** changes should be detected automatically
+ ** gateway criteria for controlled releases
+ ** a CD process is self-documenting
+ ** implies having a build, but a lot more; configuration as code
+ ** prevents drift between environments
+ ** publishing should never be manual
+ ** once production is CD, next logical step is staging (or vice-versa)
+
+* I can't preview the site locally or on a staging server
+ ** practices: build + CI/CD; containerization
+ ** story: Chris @ MuleSoft
+ ** story: DITA @ Couchbase
+ ** everything needed to build the documentation is stored with the documentation; no "works on my machine"
+ ** no information walks out the door or lives on someone's harddrive; no need for specialized knowledge
+ ** reproducible
+ ** no drift between workspace and production
+ ** easier to onboard, which means contributions more likely, less expensive
+ ** advocates a way of working with the content; everyone is previewing the same way; all get same picture
+ ** avoids long turn around times
+ ** build doesn't just build, it pulls too; sets up the author's environment
+
 * there are broken links and other broken references
  ** practices: static analysis / linter + continuous integration
  ** story: humans were put on this earth to break links
  ** implies that we have a continuous integration process
  ** implies you have a build
  ** what about references between versions if there are newer versions available
+
+* spending all our time making updates
+ ** practices: DRY
+ ** story: we hear from a lot of documentation teams that they are buried in work; no time for new initiatives
+ ** variables for version numbers and product names
+ ** includes for shared content (i.e., partials)
+ ** auto-generate derived content such as release notes, API docs, reference tables, code sample output
+ ** notifications about content needs to be reviewed be of triggers
+ ** templates to create new documents, sections, folder structure
 
 * have to "go offline" to edit / make a major revision; we can't accept contributions
  ** practices: contribution workflow
@@ -27,41 +61,6 @@
  ** by having versions in branches, you don't have to build all versions
  ** can protect branches
 
-* too many steps to get a change published
- ** practices: continuous delivery
- ** story: James' "branch builds"
- ** everything between making a change and publishing should be automated
- ** changes should be detected automatically
- ** gateway criteria for controlled releases
- ** a CD process is self-documenting
- ** implies having a build, but a lot more; configuration as code
- ** prevents drift between environments
- ** once production is CD, next logical step is staging (or vice-versa)
- ** publishing should never be manual
-
-* no two documentation projects are the same; I don't know where any of the files are
- ** practices: standard project structure
- ** a standard project structure is recognizable; no snowflakes
- ** creates a culture of standardization and consistency
- ** easy to start up the next initiative; you can have project generators
- ** bring a lot of other stuff for free
- ** tools can be designed to work with the project
- ** eliminates much of the configuration effort
- ** eases content migration
-
-* I can't preview the site locally or on a staging server
- ** practices: build + CI/CD; containerization
- ** story: Chris @ MuleSoft
- ** story: DITA @ Couchbase
- ** everything needed to build the documentation is stored with the documentation; no "works on my machine"
- ** no information walks out the door or lives on someone's harddrive; no need for specialized knowledge
- ** reproducible
- ** no drift between workspace and production
- ** easier to onboard, which means contributions more likely, less expensive
- ** advocates a way of working with the content; everyone is previewing the same way; all get same picture
- ** avoids long turn around times
- ** build doesn't just build, it pulls too; sets up the author's environment
-
 * content repository is too large; people are stepping on each others toes; build everything at once
  ** practice: modularization + maintainers + project metadata
  ** would you put all your software in one repository
@@ -72,14 +71,15 @@
  ** relationships are easier to understand; can be pulled apart; can reason about circular references
  ** separate the existence of something with the inclusion of something; means to archive / sunset
 
-* spending all our time making updates
- ** practices: DRY
- ** story: we hear from a lot of documentation teams that they are buried in work; no time for new initiatives
- ** variables for version numbers and product names
- ** includes for shared content (i.e., partials)
- ** auto-generate derived content such as release notes, API docs, reference tables, code sample output
- ** notifications about content needs to be reviewed be of triggers
- ** templates to create new documents, sections, folder structure
+* no two documentation projects are the same; I don't know where any of the files are
+ ** practices: standard project structure
+ ** a standard project structure is recognizable; no snowflakes
+ ** creates a culture of standardization and consistency
+ ** easy to start up the next initiative; you can have project generators
+ ** bring a lot of other stuff for free
+ ** tools can be designed to work with the project
+ ** eliminates much of the configuration effort
+ ** eases content migration
 
 * the samples in the documentation are broken
  ** practice: DRY + testing

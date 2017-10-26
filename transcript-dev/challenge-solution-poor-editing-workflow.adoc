@@ -65,6 +65,9 @@ If a change is needed to the documentation, or a new documentation page needs to
 That issue explains the motivation for the change, the acceptance critiera, and anyting else that needs to be discussed.
 It's a system for tracking the work to be performed, the initiatives.
 It can be used to communicate when those changes are due...which implies the use of milestones and some sort of roadmap or issue board.
+It does make you wonder how to define milestones for documentation.
+What's a documentation release?
+
 Just as issues help shine light on development, issues for documentation shine light on the writing process so it's not such a black box.
 If the writers are using an issue tracker, and you file a well explained documentation request, maybe the result will be that you will have helped birth some new documentation.
 For once, you aren't the one being asked to implement something.
