@@ -1,4 +1,15 @@
 = Monolithic Content
+////
+SAW:
+> Do you have a repository named software?
+Interaction idea: If you see a few people from the same company in the crowd, after this question you could drive home the point with: "I see JBoss people here, imagine Hibernate, Wildfly, OpenShift, and Arquillian all in the same repository."
+
+> For example, you can detect circular references, something we like to avoid in software as well.
+What is an example of a circular dependency in documentation? Why are they bad?
+
+> The answer is actually lack of tool support.
+What is the equivalent tool support in development?
+////
 
 What's the largest git repository?
 A recent post by Microsoft claimed that the Windows code base is the largest git repository, weighing in at over 300GB.

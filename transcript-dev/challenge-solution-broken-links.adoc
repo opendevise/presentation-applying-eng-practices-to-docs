@@ -1,5 +1,6 @@
 == Broken Links
 // ** what about references between versions if there are newer versions available
+// This challenge-solution is probably an example of a broader challenge-solution such as validations.
 
 I believe humans were put on this earth to do one thing...
 

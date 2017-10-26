@@ -2,6 +2,14 @@
 // why is git a geek thing?
 // versioning is a human problem
 = Versions Are Hard
+////
+SAW:
+We may (I'm not quite ready yet) move the first 4 paragraphs further down and start with "Let's talk about what isn't version control."
+Except I'd set it up as a horror scenario:
+Imagine adding a version number to every filename in RHEL.
+Imagine storing the modification history of the Linux kernel inside a file.
+and so on....
+////
 
 Talk to any technical writer for a while about managing documentation and you'll likely hear the writer avow "`versions are hard`" or "`we haven't figured out versioning yet`".
 
