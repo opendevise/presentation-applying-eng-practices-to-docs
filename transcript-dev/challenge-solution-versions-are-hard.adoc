@@ -1,3 +1,88 @@
 = Versions Are Hard
 
-...
+Talk to any technical writer for a while about managing documentation and you'll likely hear the writer avow "`versions are hard`" or "`we haven't figured out versioning yet`".
+
+They're certainly right that not having to deal with versions is simpler than having versions.
+But versions are inevitable.
+They are just a fact of software life.
+Time continues to move forward and thus we end up with different versions of things.
+And since software has versions, so must the documentation that documents the software.
+We certainly spend enough time talking about versions in software (current debate about Java versions included), so we may have a practice or two to share.
+
+If we had to manage versions all by ourselves, it *would* be hard.
+But we have amazing tools to help with this, so it doesn't have to be.
+We just need to frame the problem right.
+
+The first thing we need in order to solve the version problem is to put the content into a version control system.
+That's arguably the cardinal engineering practice in software development.
+It's hard to even think of source code without thinking about git and GitHub or the alternatives.
+What is source code if not files we version?
+Since we could say the same about documentation files, then documentation files are just as much source code as the machine code we write.
+This is the main thing we mean when we say "`docs as code`".
+
+Let's talk about what isn't version control.
+What isn't version control is adding a version number to a filename.
+What isn't version control is storing modification history inside a file.
+What isn't version control is simply overwriting the file with changes.
+What isn't version control is a binary format that can't be diffed to inspect changes.
+
+But I've seen all of these things done in the name of documentation.
+The documentation *is* code and needs to be stored in the same way.
+Maybe even with the application code.
+If not there, then at least in a dedicated repository.
+
+That takes care of what we might call the revision history, or log.
+But what about formal versions like versions of a product.
+How do we handle those?
+
+I came across this diagram describing how Balsamiq handles documentation versions.
+Anything strike you as odd here.
+
+Let's go back to development.
+Would you put each version, each release, of your software on the master branch inside a folder named after the version.
+You're looking at me right now like I have three heads.
+Then why on earth aren't you looking at writers that way for doing exactly same thing.
+
+That brings us back to this diagram proposed by Balsamiq for managing versions of their docs.
+Imagine this was proposed by your documentation team (or perhaps they are already doing this).
+What would you say?
+If not version folders, what practice do we use in engineering?
+Branches and tags of course.
+
+Of the two, I feel strongly that branches are the better fit for documentation.
+Here's why.
+Documentation is commentary on software fixed in time (a release).
+So the documentation may still need to be updated after the software is released (or frozen).
+But that update doesn't change the software.
+In other words, it continues to move forward after the software is tagged.
+We know that describes a branch.
+Branches were designed for managing different version lines.
+So a branch is a good fit for that scenario.
+
+Now, when you want to make a new version of the docs, you just make a new branch.
+No need to copy a bunch of files around.
+You could even protect older branches that you don't want to receive updates.
+So there are other benefits to this strategy.
+
+The point is, don't reinvent features of the version control system like branches.
+Just use those features.
+I'll admit branches are going to require some getting used to for writers.
+Once they learn, it will pay them back.
+But that brings us back to "`teach them git`".
+
+Here's another question.
+What if you have two documention products that have different version numbers (or aren't otherwise versioned together?).
+Do those belong in the same repository?
+Think about creating a version branch.
+What do you do with the files in that branch which aren't part of that version?
+Do you delete them?
+How will that affect the ability to merge changes from that branch? If you leave them, what if they get updated.
+Where do those changes get routed.
+
+It should be clear to you that we need separate repositories, each with one idea of a version line.
+The way I like to say it is that "`only files that are versioned together go together`".
+
+That means we need to start thinking about multiple documention repositories.
+That's the subject of the next challenge to solve.
+
+(In next challenge, mention that having versions in branches means we can pick and choose which versions to include in the site using a branch filter)
