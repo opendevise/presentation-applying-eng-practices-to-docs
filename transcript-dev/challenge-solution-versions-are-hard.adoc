@@ -1,3 +1,6 @@
+// what if it were writers that were saying to developers, why don't you know how to use git?
+// why is git a geek thing?
+// versioning is a human problem
 = Versions Are Hard
 
 Talk to any technical writer for a while about managing documentation and you'll likely hear the writer avow "`versions are hard`" or "`we haven't figured out versioning yet`".
@@ -61,6 +64,7 @@ So a branch is a good fit for that scenario.
 
 Now, when you want to make a new version of the docs, you just make a new branch.
 No need to copy a bunch of files around.
+Branches are lightweight, which means they only contain differences from the point at which the branch was made.
 You could even protect older branches that you don't want to receive updates.
 So there are other benefits to this strategy.
 
@@ -84,5 +88,3 @@ The way I like to say it is that "`only files that are versioned together go tog
 
 That means we need to start thinking about multiple documention repositories.
 That's the subject of the next challenge to solve.
-
-(In next challenge, mention that having versions in branches means we can pick and choose which versions to include in the site using a branch filter)

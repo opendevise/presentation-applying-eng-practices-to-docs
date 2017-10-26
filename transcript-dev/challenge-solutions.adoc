@@ -12,3 +12,5 @@ include::challenge-solution-swamped.adoc[]
 include::challenge-solution-poor-editing-workflow.adoc[]
 
 include::challenge-solution-versions-are-hard.adoc[]
+
+include::challenge-solution-monolithic-content.adoc[]

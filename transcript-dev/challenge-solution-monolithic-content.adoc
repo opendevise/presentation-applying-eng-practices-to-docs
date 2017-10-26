@@ -1,0 +1,62 @@
+= Monolithic Content
+
+What's the largest git repository?
+A recent post by Microsoft claimed that the Windows code base is the largest git repository, weighing in at over 300GB.
+Okay, that's pretty extreme.
+Another project we can think of is the Linux kernel.
+After all, the creator of the Linux kernel is also the creator of git, so you expect he'd use it.
+The Linux kernel is 1.75GB with over 700,000 commits.
+That's no where near the size of the Windows codebase, but it's still quite large.
+So how does that compare to documentation repositories?
+We recently came across a single documentation repository that was 750MB and had over 15,000 commits.
+Considering how much longer Linux has been around (almost 25 years old), that's insane growth, not really sustainable.
+
+Aside from the fact that a 750MB repository takes forever to clone, it also presents a real problem for collaboration.
+With that many files and that many commits, people just end up stepping on each others toes.
+Just imagine the number of times you'd have to rebase.
+
+But I don't think this is a debate about monorepos vs modular repos.
+The question is whether we are being honest with ourselves about what constitutes a documentation project.
+Let me phrase this another way.
+Do you have a repository named software?
+Then why on earth do you have a repository named "`documentation`"?
+It's simply not truthful that documentation is a single entity.
+
+Content should be split along lines of subject, purpose, or audience.
+Smaller chunks are easier to maintain, reuse, and remix.
+It also encourages having content owners who can grant different permissions for different documentation products.
+Only the people who are most likely to have to work together actually have to.
+Other documentation activity no longer has to be a distraction.
+
+In order to determine where documentation repositories should be split, and easy way is to go back to my rule from the previous challenge.
+"`Only files that are versioned together belong together`".
+Think about how you would version the documentation.
+Any time you find documentation that is versioned separately than other documentation => repository.
+If this still leaves you with too few repositories, you can just mirror the split in the software the documentation documents.
+
+Once we split the documentation apart, which we'll refer to as documentation components, it brings the relationship between components into focus.
+Those relationships become easier to detect, understand, and reason about.
+For example, you can detect circular references, something we like to avoid in software as well.
+
+With the documentation in separate components, and those components having dedicated version branches, it makes it easy to compose a documentation site, just as we might package and integrate software.
+Having versions in branches means we can pick and choose which versions to include in the site using a branch filter.
+Conversely, it's just as easy to archive a documentation or version.
+That documentation doesn't have to cease to exist just so it isn't included in the site.
+You just don't include it.
+
+With multiple repositories being such an obvious solution, why isn't it done more?
+The answer is actually lack of tool support.
+Most site generators make the huge assumption that all content is stored in a single branch of a single repository.
+But this is no excuse for a bad practice.
+Simply find a tool that knows how to take content from multiple repositories and branches or build one.
+In fact, that's something I'm currently working on with a new project named Antora.
+Before Antora start processing contnet, the first step in its pipeline is to go out and gather the content.
+That opens up a whole world of possibility for how to organize that content.
+
+Having a single repository for your documentation named documentation is a false designation.
+Content is sovereign and thus should be stored in a modular way.
+Not only does that prevent writers from step on each others' toes, it also encourages ownership and proper permissions.
+But the real benefit is that the documentation can be consumed and packaged in different ways.
+Smaller chunks of content are easier to maintain, reuse, remix, and, when it comes time, archive.
+
+(perhaps we could transition into DRY here)
