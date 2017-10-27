@@ -1,20 +1,24 @@
-== Broken Links
+== Broken Windows
 // ** what about references between versions if there are newer versions available
 // This challenge-solution is probably an example of a broader challenge-solution such as validations.
 
 I believe humans were put on this earth to do one thing...
 
-<picture of broken link, chain-broken>
+(slide concept: picture of broken link, fa.chain-broken)
 
 Oh yes.
 You know it.
 Break links.
 
+That's not totally fair.
+The link was probably right at some point.
+But as Heraclitus would say, "the only thing that is constant is change", so broken links happen because life happens.
+
 But that's okay!
 Why?
-Because that's something we know how to fix.
+Because it's something we know how to fix.
 
-<picture of unbroken link, chain>
+(slide concept: picture of unbroken link, fa.chain)
 
 What engineering practice do we use to catch coding errors and invalid syntax?
 
@@ -57,3 +61,34 @@ Instead, you want to be proactive.
 Check the problems early while they are small and in context.
 That way they are manageable and quick to fix.
 When someone asks if you have any broken links you're like, "pfff, never".
+
+Before you get too confident, can you say the same for the examples.
+Documentation is notorious for having broken examples.
+Short of obsessively trying the examples in the documentation, how can you be sure they all work?
+What engineering practice can we apply?
+
+Before we talk about the example in the documentation, how about the example outside of the documentation.
+How are we ever sure that code works?
+We test it, of course!
+So the first thing you want to do is make a test suite for the examples, or even make the examples the test fixtures themselves.
+That way, you have a known starting point and you can give that project of examples the CI treatment.
+Now the question becomes, how do you get it into the documentation.
+Asciidoctor supports including tagged lines from a source file into a listing block.
+The Groovy project uses this practice for all of the code snippets in language reference.
+This is a fantastic practice not only because it avoids broken examples in the documentation, it also shifts the ownership of code from the writer to the developer.
+The writer no longer has to know how to create and format the code.
+The writer just has to know that's the code that corresponds to the description.
+
+What about the expected output that the code produces?
+Is that being hand-edited too?
+Why?
+If there is sample output in the documentation, that should be generated as well.
+The Neo4j project does this with the examples in the Neo4j manual.
+Any output the code is expected to created is captured and inserted into the manual.
+In other parts, they run the code interactively and show the output in real time, which is even better.
+Either way, it means the writer no longer has to hand edit it, which means the documentation isn't bitten by the constant of change, and thus no broken windows.
+
+The defense against broken windows is eternal.
+But it's not one that a human has to take on.
+This is why we have computers.
+If you take the time to set up validations on the content, and source examples from a tested project, then you've hardened the process to avoid broken windows from making it to production.

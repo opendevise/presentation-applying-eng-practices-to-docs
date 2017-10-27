@@ -7,12 +7,6 @@ Why do we expect writers to start from a blank page?
 If we can give them tools to create new things, even if it's a small thing, it will likely have a big impact on motivation and givem them momentum.
 It also helps to encourage consistency.
 
-// => broken windows
-// challenge: keeping examples and sample output updated
-// solution: automatically include examples and output from a shared test suite
-If there is sample output in the documentation, that should be generated as well.
-And, as we already talked about (will talk about?), the examples themselves should be included from a test suite (ideally) or shared project.
-
 // challenge: knowing what to update
 // solution: notifications of changes that affect the documentation
 Finally, and a big one, with documentation teams so busy all the time, how do they even know what to update?
