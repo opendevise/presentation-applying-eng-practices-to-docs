@@ -1,0 +1,29 @@
+// challenge: starting something new means starting from scratch; lots of steps to get going
+// solution: code generation / templates / tooling
+Another way to accelerate writers is to give them templates to create new documents, sections, or a whole folder structure.
+Just think about how you develop.
+Chances are, you use some sort of wizard to get started on a task, whether it's to create a new project or just a Java class.
+Why do we expect writers to start from a blank page?
+If we can give them tools to create new things, even if it's a small thing, it will likely have a big impact on motivation and givem them momentum.
+It also helps to encourage consistency.
+
+// => broken windows
+// challenge: keeping examples and sample output updated
+// solution: automatically include examples and output from a shared test suite
+If there is sample output in the documentation, that should be generated as well.
+And, as we already talked about (will talk about?), the examples themselves should be included from a test suite (ideally) or shared project.
+
+// challenge: knowing what to update
+// solution: notifications of changes that affect the documentation
+Finally, and a big one, with documentation teams so busy all the time, how do they even know what to update?
+As developers, we're pretty much driven by notifications.
+We get a notification that something happened, something new is available, and we give that thing attention.
+Writers can't possibly scan all the hundreds or thousands of documents they have to maintain.
+They need some pointers.
+They should be able to receive notifications about the sofware that the content documents so they have a burndown list of what to evaluate.
+If any part of that notification can trigger an automatic update, such as updating a version number, then that should definitely be done to save them the trouble.
+One tool that comes to mind is greenkeeper or dependencies.io.
+These tools send automatic pull requests to update the dependencies of a project when new versions become available.
+(screenshot: https://github.com/parse-community/parse-server/pull/4227)
+This is definitely something that could be developed for documentation as well.
+Just think of all the time it would save.
