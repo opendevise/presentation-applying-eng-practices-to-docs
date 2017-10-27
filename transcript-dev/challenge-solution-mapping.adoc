@@ -1,7 +1,7 @@
 = Challenge / Practice Mapping
 
 * too many steps to get a change published
- ** practices: continuous delivery
+ ** practices: continuous deployment
  ** story: James' "branch builds"
  ** everything between making a change and publishing should be automated
  ** changes should be detected automatically

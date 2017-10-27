@@ -7,6 +7,8 @@ Then we'll think about what engineering practices we can apply to help overcome 
 
 include::challenge-solution-publishing-is-painful.adoc[]
 
+include::challenge-solution-cannot-preview.adoc[]
+
 include::challenge-solution-broken-links.adoc[]
 
 include::challenge-solution-swamped.adoc[]

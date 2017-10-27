@@ -1,0 +1,107 @@
+== Cannot Preview Site
+// TODO bootstrap author's environment
+
+When you join a project, the first thing you want to do, the first thing anyone wants to do, is to run it to see if it works.
+After all, if you can't establish that it worked in the first place, how can you be sure whether your changes helped or hurt it?
+So you grab the project and you look for what?
+Of course, you look for a command you can execute to compile and run it.
+And you hope, no, you pray, that doesn't require a lot of steps.
+That command is a build.
+If set up correctly, you should just be able to satisfy a few prerequisites to run the build tool and the build tool should take care of the rest.
+
+I've seen a lot of documentation projects just consist of content, but no way to do anything with that content.
+I've seen others where there is a build, but the build doesn't work.
+You know, the old, "it works on my machine".
+The really disheartening part is when you do get the build working only to find out that what it builds isn't even remotely the same as what's running in production.
+
+Here's an excerpt from a real documentation project (though I'll hide the name to protect the victims).
+
+> Docs are generated with DITA OT.
+Technically, we have a forked version of DITA OT.
+As of this writing, we know this exists but we don't quite know why it was forked and it was done without history.
+That's a todo for later.
+
+#:scream:#
+
+Would you stand for this in your company?
+
+The purpose of a build is so everything that is needed to build the artifact, in this case a documentation site, is stored right there with the documentation.
+There's no need for specialized knowledge, "oh, talk to Jean", and no information walks out the door when Jean decides to level up Jean's career at another company.
+It also makes it easier to onboard new writers when they are leveling up into your company.
+It's not just the paid employees either.
+The benefits of a proper build applies to anyone interacting with the project, including contributors.
+The quicker you can get contributors onboarded, and on the writing, the more likely you are to receive those contributions.
+In turn, it makes the documentation less expensive to maintain because you benefit from the long tail.
+You want those people out there who have the specialize knowledge to be motivated to share it.
+A working build is motivating.
+A broken build is not.
+
+In short, a build makes the process reproducible.
+If done right, it should be building exactly what's running in production in the local environment.
+Even better is if the build is also containerized so you're quite literally running the container that is run in production.
+That ensures no drift occurs between what the writers are working on and what's being published...and no unpleasant surprises when it gets published.
+Everyone is previewing the same way and therefore everyone has the same picture of how things look and work.
+
+A build is not just about saving time once.
+It's about saving time again and again.
+The benefit of a build is realized over the long run.
+
+Let me share another story with you of what I actually saw happen at a real company in Silicon Valley company.
+I was observing a writer work.
+We'll call her Kayla.
+Kayla was making some changes to an AsciiDoc document in Atom.
+After moving around some sections, she wanted to preview her work in the generated site.
+So she went hunting for her terminal, which she had closed so she had to reopen.
+Then she navigated back to the project directory.
+But she had forgotten the command she had to type.
+So she opened up her notes program and found the magic command that someone had given to her that generates the site.
+She ran that command and waited patiently for it to finish after 5 minutes.
+When it was done, she opened up a file browser and navigated to the output folder.
+Then she opened up another file browser and navigated to the web server folder.
+She proceeded to highlight all the files in the output folder, then with plenty of dexterity, dragged those files from the output directory to the web server folder.
+Except she copied them up one folder.
+So she deleted those files and went through the drag and drop exercise again.
+With the files in the right place, she opened up the web browser and navigated to localhost.
+Except she forget to start the web server.
+Back to the terminal and the notes program to execute another special script.
+Once that was up and running, she found the browser and refreshed.
+Then she carefully browsed through the navigation menu to find the page she wanted to preview.
+And finally, she arrived at the page with her changes.
+But they weren't what she was expected.
+She had made an error.
+So it was back to the editor for another round of edits.
+This time, she needed to add an image.
+I'll spare you the details of how she got the image into the document, but suffice to say that was a process.
+Then she went through the whole manual process again of building the site, copying the files to the web server, and working her way back to the page in the web browser.
+Only to find out that she overwrote the wrong image.
+It was back to the drawing board once again.
+
+What can one really say after observing that other than "sis, do you even automate?"
+Clearly this is no way to work.
+But what I'm telling you right now is this *is* how writers are working.
+It's madness.
+And it has to end.
+
+You know and I know that the reason for an automated build is to avoid these types of long turn around times.
+There has to be a better way.
+And each day we can work to make it better than the last.
+Just think about the steps you had to perform when you started a project versus the fine-tuned development cycle you've got going today.
+You probably brag about how efficient you are.
+What would be the ideal case for the writer.
+First of all, they don't need to be messing with web servers or drag and drop.
+The build should be working on demand, responding to their every change.
+Maybe even have the browser open to the page they are editing.
+Better yet, have a live reload that automatically refreshes when there are changes.
+These things are possibles.
+Writers just don't know that.
+
+We could take this even one step further.
+Let's say an author pushes changes to a branch, perhaps to collaborate with other writers.
+Why not have that branch immediately published to a staging area?
+That way, the writer does not need to make a special request for a staging site, using up precious resources.
+The staging site is just available on demand the moment the branch is pushed and is automatically destroyed afterwards.
+This practice comes right out of engineering, which means they are going to need your help to get that going.
+
+Simply put, and automated build, and better yet, a containerized build, saves time.
+And time is money.
+If you want to keep writers motivated, and maximize the finite time they have to write, they shouldn't be getting stuck at step 0 and they shouldn't have to be spending most of their time acting like a human build process like Kayla.
