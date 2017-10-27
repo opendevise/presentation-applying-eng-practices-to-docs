@@ -6,9 +6,6 @@ Interaction idea: If you see a few people from the same company in the crowd, af
 
 > For example, you can detect circular references, something we like to avoid in software as well.
 What is an example of a circular dependency in documentation? Why are they bad?
-
-> The answer is actually lack of tool support.
-What is the equivalent tool support in development?
 ////
 
 What's the largest git repository?
@@ -47,7 +44,7 @@ If this still leaves you with too few repositories, you can just mirror the spli
 
 Once we split the documentation apart, which we'll refer to as documentation components, it brings the relationship between components into focus.
 Those relationships become easier to detect, understand, and reason about.
-For example, you can detect circular references, something we like to avoid in software as well.
+//For example, you can detect circular references, something we like to avoid in software as well.
 
 With the documentation in separate components, and those components having dedicated version branches, it makes it easy to compose a documentation site, just as we might package and integrate software.
 Having versions in branches means we can pick and choose which versions to include in the site using a branch filter.
@@ -56,7 +53,11 @@ That documentation doesn't have to cease to exist just so it isn't included in t
 You just don't include it.
 
 With multiple repositories being such an obvious solution, why isn't it done more?
-The answer is actually lack of tool support.
+I think the software is holding us back.
+It's kind of like when Eclipse couldn't handle multi-module Maven projects.
+It wasn't wrong to want multi-module projects.
+But people weren't making them because the software was holding them back.
+
 Most site generators make the huge assumption that all content is stored in a single branch of a single repository.
 But this is no excuse for a bad practice.
 Simply find a tool that knows how to take content from multiple repositories and branches or build one.
