@@ -1,38 +1,48 @@
 = Poor Editing Workflow
 
-I want you to think about a scenario for a moment.
-Imagine you're sitting at your desk hacking away on some code and you receive an e-mail from a programmer colleague.
+//I want you to think about a scenario for a moment.
+Imagine you're sitting at your desk hacking on some code and you receive an e-mail from another programmer.
+// SAW: slide with an email and the information in this story
 The subject line reads, "for your review".
-Curious about what you're being asked to look at, you open the message.
-It contains a bit of text and an attachment.
-The attachment is a Java source file.
 The text says, "I edited this source file to implement feature A and fix bug B. Can you merge it?"
-Just let me ask you, what would be your reaction?
+//Curious about what you're being asked to look at, you open the message.
+//It contains a bit of text and an attachment.
+The attachment is a Java source file.
+
+Let me ask you, what would be your reaction?
 
 Just as I suspected.
 You're horrified.
 Then why on earth do we let this happen for documentation?
 
-So you're heading over to your colleague's desk.
+//So you're heading over to your colleague's desk.
 What are you going to say to him or her?
 Well, you'll probably say, "you should submit this change as a pull request".
+
 The same goes for writing.
 Pull requests instead of e-mail.
 
 I want to read an excerpt from the Docs Like Code book that explains how the book was written.
 
+// SAW: Time to enter the excerpt text here
 (excerpt)
 
-Now, I don't want to be too hard on these authors, who have created an excellent book.
-They're evolving.
-But you should recognize that they, and many others not as tech savvy as them, could still use your help.
+Seriously, why aren't we helping them set up the contribution workflow and tools we use for code?
+// SAW: ;D I'm sensing _tone_ here
+//Now, I don't want to be too hard on these authors, who have created an excellent book.
+//They're evolving.
+//But you should recognize that they, and many others not as tech savvy as them, could still use your help.
 
-What they are looking for is a contribution workflow.
-Well, we might have a thing or two to say about that!
+Unless, of course, your team isn't happy with your code contribution workflow.
+Then feel free to take some of these tips for yourselves.
 
-The bump in their process came when the binary format was introduced.
-The key to being able to work collaboratively is keeping the content in a text-only format.
+//Well, we might have a thing or two to say about that!
+//The bump in their process came when the binary format was introduced. <- SAW: I really don't like this sentence. As a writer, it makes me all GRRRRR
+The key to working collaboratively is keeping the content in a text-only format.
+// SAW: The jump from the sentence above to the sentence below would win a gold medal. The jump is so long, I got lost in the clouds and can't connect the two dots.
 Then you can use pull requests to submit changes, just like with the code.
+// SAW: Where possible can we replace GitHub with Gitlab?
+// SAW: edit right on git service or integrated discussion thread <- these next two sentences are probably redundant, should probably get to "code review process" as soon as possible
 GitHub even has a feature that allows authors edit the files directly on GitHub and send a pull request on save.
 So that docs stay centralized, they can be versioned (which we'll discuss later), and you have an integrated discussion thread you can use to discuss those changes.
 And what does that lead us to?
@@ -53,6 +63,7 @@ And that can be a little tricky.
 
 If there were only people that they worked with who know git amazingly well and can teach them.
 Oh, wait.
+// SAW: I'm worried that this feels like a throw-away point. The cynic in me says who's going to take the time to teach anyone git if teaching git isn't their job. Followed by, oh please, god no, don't let developers teach writers all their terrible git habits
 So please, if there's nothing else you take away from this talk, please go back and teach your writers how to use git.
 
 Before we wrap up this topic, there's one more thing to address.
@@ -62,9 +73,9 @@ Of course not.
 They stem from issues.
 Again, why shouldn't documentation follow the same process.
 If a change is needed to the documentation, or a new documentation page needs to be written, it should originate with an issue.
-That issue explains the motivation for the change, the acceptance critiera, and anyting else that needs to be discussed.
+That issue explains the motivation for the change, the acceptance criteria, and anything else that needs to be discussed.
 It's a system for tracking the work to be performed, the initiatives.
-It can be used to communicate when those changes are due...which implies the use of milestones and some sort of roadmap or issue board.
+It can be used to communicate when those changes are due...which implies the use of milestones, roadmap or issue board.
 It does make you wonder how to define milestones for documentation.
 What's a documentation release?
 
