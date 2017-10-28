@@ -4,57 +4,55 @@ SAW: I'm going to need to work on this one in layers, it's too "surface layer" a
 But I'm pretty sure I know how to fix it and make it realize its full potential.
 ////
 
-Imagine you're sitting at your desk hacking on some code when you receive an e-mail from another programmer.
+Imagine you're sitting at your desk hacking away on some code when you receive an e-mail from another programmer.
 
 // Problem; Screenshot
-Slide: Screenshot of the "fake" email described below
+Slide: Screenshot of the hypothetical email described below; or e-mail with attachment icon
 
-The subject line reads, "for your review".
-The text says, "I edited this source file to implement feature A and fix bug B. Can you merge it?"
-//Curious about what you're being asked to look at, you open the message.
-//It contains a bit of text and an attachment.
-The attachment is a Java source file.
+The subject line reads, "`for your review`".
+The text explains, "`I edited this source file to implement feature A and fix bug B. Can you merge it?`"
+Attached to the e-mail is a Java source file.
 
-Let me ask you, what would be your reaction?
+Let me ask.
+What would be your reaction?
 
 Just as I suspected.
 You're horrified.
-Then why on earth do we let this happen for documentation?
+(slide concept: 😱)
 
-What are you going to say to your colleague?
-Well, you'll probably say, "you should submit this change as a pull request".
+If this behavior is a no-no for development, why on earth do we let it happen for documentation?
 
-The same goes for writing.
+You immediately head over to your colleague's desk.
+What are you going to say?
+Well, you'd probably say, "`please submit this change as a pull request`".
+
+It doesn't matter if we're talking about writing or coding.
 Pull requests instead of e-mail.
 
 I want to read an excerpt from the Docs Like Code book that explains how the book was written.
 
-// SAW: Time to enter the excerpt text here. I need it so I can see if the points below are aligned and ordered correctly. Once the excerpt is in, I'll edit this file in more detail.
-(excerpt)
+> Kelly first edited the chapters individually by creating Word documents from the Markdown files, marking them up, and creating PDFs from them to make the tracked changes easier to read.
+Then, she created issues for each chapter's edits, and Diane and Anne made pull requests with the suggested edits.
+As a final quality check, Kelly edited the book as a whole, creating pull requests with final copy edits.
 
-Seriously, why aren't we helping them set up the contribution workflow and tools we use for code?
+It's getting there.
+Pull requests, good.
+Pulling the Markdown files out of the process and into Word, then producing a read-only PDF.
+Not so much.
 
-//Now, I don't want to be too hard on these authors, who have created an excellent book.
-//They're evolving.
-//But you should recognize that they, and many others not as tech savvy as them, could still use your help.
-// SAW: ;D I'm sensing _tone_ here ^^
+The key to working collaboratively is keeping the content in the system and storing it as plain text.
+A text-only format can be diffed, so there's no need for track changes.
+The version control system gives you that for free.
+You can make your changes, then submit a pull request so those changes can be reviewed and merged by another writer, just like with the code.
 
-Unless, of course, your team isn't happy with your code contribution workflow.
-Then feel free to take some of these tips for yourselves.
-
-//Well, we might have a thing or two to say about that!
-//The bump in their process came when the binary format was introduced. <- SAW: I really don't like this sentence. As a writer, it makes me all GRRRRR
-The key to working collaboratively is keeping the content in a text-only format.
-// SAW: The jump from the sentence above to the sentence below would win a gold medal. The jump is so long, I got lost in the clouds and can't connect the two dots.
-Then you can use pull requests to submit changes, just like with the code.
-// SAW: Where possible, can we replace GitHub with Gitlab?
-// SAW: edit right on git service or integrated discussion thread <- these next two sentences are probably redundant, should probably get to "code review process" as soon as possible
-GitHub even has a feature that allows authors edit the files directly on GitHub and send a pull request on save.
-So that docs stay centralized, they can be versioned (which we'll discuss later), and you have an integrated discussion thread you can use to discuss those changes.
+// DJA: we might want to move this point under code review process
+Both GitHub and GitLab even have a feature that allows authors edit the files directly through the web interface and submit a pull request on save.
+This is a great way to warm up authors to this new workflow.
+Versioning is automatic, and the web interface gives you an integrated discussion thread to discuss the changes.
 And what does that lead us to?
 
-Who said "a code review process"?
-Exactly.
+Who said "`a code review process`"?
+You got it!
 Who needs track changes when you have a full code review system at your finger tips?
 Authors can look a what lines changed, even previewing those changes with a "rich diff", they can comment on a change to seek clarification or request an update, they can approve or decline a set of changes, and they can merge the changes into master or another branch (even applying it multiple times).
 The point is, a code review tool is just as powerful for writing as it is for coding.
@@ -63,15 +61,20 @@ And writers should be leveraging it.
 This is all sounding good, but there's one small problem.
 git.
 Writers have to learn git.
-And that can be a little tricky.
+And that can be...tricky.
 
 // Problem example; screenshot
 Slide: I hate git tweet screenshot
 
-If there were only people that they worked with who know git amazingly well and can teach them.
+If only they worked with people who know git amazingly well and can teach them.
 Oh, wait.
+That's you.
+Writers really only need to know a few key concepts and commands to be successful.
+clone, fetch, pull, rebase, branch, status, commit (and how to write a good commit message).
+branch is super important.
+rebase is a nice stretch goal, but don't scare them away with it.
 // SAW: I'm worried that this feels like a throw-away point. The cynic in me says who's going to take the time to teach anyone git if teaching git isn't their job. Followed by, oh please, god no, don't let developers teach writers all their terrible git habits
-So please, if there's nothing else you take away from this talk, please go back and teach your writers how to use git.
+So please, if there's nothing else you take away from this talk, please go back and teach your writers how to be dangerous with git.
 
 Before we wrap up this topic, there's one more thing to address.
 Where do these magical changes to the documentation come from?
