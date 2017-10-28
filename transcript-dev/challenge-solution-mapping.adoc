@@ -1,5 +1,7 @@
 = Challenge / Practice Mapping
 
+* code generation
+
 * too many steps to get a change published
  ** practices: continuous deployment
  ** story: James' "branch builds"

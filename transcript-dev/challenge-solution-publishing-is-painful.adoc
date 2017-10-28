@@ -4,13 +4,18 @@
 // Problem; Image
 Slide: Man free climbing on mountain side
 
-Once you make a change, you know people are going to ask when it will published.
-Heck, you want it published too.
+Once you make a change, you know people are going to ask, "`When will published?`"
+Heck, you want to get it published too.
 But right now, this is an extremely painful process for writers.
-You see, the writing part is easy for them.
+You see, the writing part is natural for them.
 It's what they do.
 But then there's this huge barrier they need to scale in order to get their words to a place where people can read them.
 They find themselves quickly in over their heads because it's not a wall they know how to free climb.
+
+Just think about a project you've worked on that required a manual release.
+The first thing you have to do is remember what steps are even necessary.
+If it's been awhile, it kind of feels like your starting over from the beginning.
+And that can be very painful.
 
 It shouldn't be.
 Every step between making a change and publishing should be automated.
@@ -20,6 +25,10 @@ Slide: Continuous delivery
 
 In engineering, we recognize this as the practice of continuous delivery.
 In writing, we call it "`push to publish`".
+
+A writer makes a change and submits a pull request.
+The reviewer approves that change and merges it to master.
+From there, it goes straight to production (barring any gateway criteria).
 
 There's a lot more to gain from continuous delivery, push to publish, than just speed and productivity.
 A CD process eradicates manual steps.

@@ -1,3 +1,5 @@
+"I'm telling you not to write documentation. That's not helping."
+
 * documentation is an important part of software engineering
 * github survey:
  ** "Documentation is highly valued, frequently overlooked, and a means for establishing inclusive and accessible communities."

@@ -37,7 +37,8 @@ Variables, of course.
 // Solution support
 Slide: AsciiDoc attributes
 
-Writers could use variables--which in AsciiDoc we call attributes--as placeholders instead of hardcoding version numbers and product names.
+Writers could use variables--which in AsciiDoc we call attributes--as placeholders instead of hardcoding version numbers, product names, and urls.
+(slide concept: example)
 Not only does this save writers time, it also reduces the chance of the reader seeing the wrong product name or version number.
 You can probably think of other examples where this practice can be used.
 

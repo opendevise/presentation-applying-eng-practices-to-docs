@@ -14,6 +14,10 @@ As developers, we're pretty much driven by notifications.
 We get a notification that something happened, something new is available, and we give that thing attention.
 Writers can't possibly scan all the hundreds or thousands of documents they have to maintain.
 They need some pointers.
+
+One client of ours had asked if there was a button that could be pressed by developers to let them know when there was a new release.
+The client has the right idea, maybe just not the right means.
+
 They should be able to receive notifications about the sofware that the content documents so they have a burndown list of what to evaluate.
 If any part of that notification can trigger an automatic update, such as updating a version number, then that should definitely be done to save them the trouble.
 One tool that comes to mind is greenkeeper or dependencies.io.
