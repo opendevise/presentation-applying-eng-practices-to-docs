@@ -1,8 +1,14 @@
 = Poor Editing Workflow
+////
+SAW: I'm going to need to work on this one in layers, it's too "surface layer" at the moment to really feel like it is providing value.
+But I'm pretty sure I know how to fix it and make it realize its full potential.
+////
 
-//I want you to think about a scenario for a moment.
-Imagine you're sitting at your desk hacking on some code and you receive an e-mail from another programmer.
-// SAW: slide with an email and the information in this story
+Imagine you're sitting at your desk hacking on some code when you receive an e-mail from another programmer.
+
+// Problem; Screenshot
+Slide: Screenshot of the "fake" email described below
+
 The subject line reads, "for your review".
 The text says, "I edited this source file to implement feature A and fix bug B. Can you merge it?"
 //Curious about what you're being asked to look at, you open the message.
@@ -15,8 +21,7 @@ Just as I suspected.
 You're horrified.
 Then why on earth do we let this happen for documentation?
 
-//So you're heading over to your colleague's desk.
-What are you going to say to him or her?
+What are you going to say to your colleague?
 Well, you'll probably say, "you should submit this change as a pull request".
 
 The same goes for writing.
@@ -24,14 +29,15 @@ Pull requests instead of e-mail.
 
 I want to read an excerpt from the Docs Like Code book that explains how the book was written.
 
-// SAW: Time to enter the excerpt text here
+// SAW: Time to enter the excerpt text here. I need it so I can see if the points below are aligned and ordered correctly. Once the excerpt is in, I'll edit this file in more detail.
 (excerpt)
 
 Seriously, why aren't we helping them set up the contribution workflow and tools we use for code?
-// SAW: ;D I'm sensing _tone_ here
+
 //Now, I don't want to be too hard on these authors, who have created an excellent book.
 //They're evolving.
 //But you should recognize that they, and many others not as tech savvy as them, could still use your help.
+// SAW: ;D I'm sensing _tone_ here ^^
 
 Unless, of course, your team isn't happy with your code contribution workflow.
 Then feel free to take some of these tips for yourselves.
@@ -41,7 +47,7 @@ Then feel free to take some of these tips for yourselves.
 The key to working collaboratively is keeping the content in a text-only format.
 // SAW: The jump from the sentence above to the sentence below would win a gold medal. The jump is so long, I got lost in the clouds and can't connect the two dots.
 Then you can use pull requests to submit changes, just like with the code.
-// SAW: Where possible can we replace GitHub with Gitlab?
+// SAW: Where possible, can we replace GitHub with Gitlab?
 // SAW: edit right on git service or integrated discussion thread <- these next two sentences are probably redundant, should probably get to "code review process" as soon as possible
 GitHub even has a feature that allows authors edit the files directly on GitHub and send a pull request on save.
 So that docs stay centralized, they can be versioned (which we'll discuss later), and you have an integrated discussion thread you can use to discuss those changes.
@@ -59,7 +65,8 @@ git.
 Writers have to learn git.
 And that can be a little tricky.
 
-(I hate git tweet)
+// Problem example; screenshot
+Slide: I hate git tweet screenshot
 
 If there were only people that they worked with who know git amazingly well and can teach them.
 Oh, wait.
@@ -71,7 +78,7 @@ Where do these magical changes to the documentation come from?
 Do code changes just come out of the blue?
 Of course not.
 They stem from issues.
-Again, why shouldn't documentation follow the same process.
+Again, why shouldn't documentation follow the same process?
 If a change is needed to the documentation, or a new documentation page needs to be written, it should originate with an issue.
 That issue explains the motivation for the change, the acceptance criteria, and anything else that needs to be discussed.
 It's a system for tracking the work to be performed, the initiatives.

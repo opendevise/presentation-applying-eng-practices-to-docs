@@ -113,6 +113,6 @@ That way, the writer does not need to make a special request for a staging site,
 The staging site is just available on demand the moment the branch is pushed and is automatically destroyed afterwards.
 This practice comes right out of engineering, which means they are going to need your help to get that going.
 
-Simply put, and automated build, and better yet, a containerized build, saves time.
+Simply put, an automated build, and better yet, a containerized build, saves time.
 And time is money.
 If you want to keep writers motivated, and maximize the finite time they have to write, they shouldn't be getting stuck at step 0 and they shouldn't have to be spending most of their time acting like a human build process like Kayla.

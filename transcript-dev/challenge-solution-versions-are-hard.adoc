@@ -46,11 +46,14 @@ That takes care of what we might call the revision history, or log.
 But what about formal versions like versions of a product.
 How do we handle those?
 
+// Problem example; Image
+Slide: Balsamiq docs version diagram
+
 I came across this diagram describing how Balsamiq handles documentation versions.
-Anything strike you as odd here.
+Anything strike you as odd here?
 
 Let's go back to development.
-Would you put each version, each release, of your software on the master branch inside a folder named after the version.
+Would you put each version, each release, of your software on the master branch inside a folder named after the version?
 You're looking at me right now like I have three heads.
 Then why on earth aren't you looking at writers that way for doing exactly same thing.
 
@@ -60,10 +63,13 @@ What would you say?
 If not version folders, what practice do we use in engineering?
 Branches and tags of course.
 
-Of the two, I feel strongly that branches are the better fit for documentation.
+// Solution; Typography
+Slide: Branches
+
+Of the two, branches are the better fit for documentation.
 Here's why.
 Documentation is commentary on software fixed in time (a release).
-So the documentation may still need to be updated after the software is released (or frozen).
+So the documentation may still need to be updated after the software is released.
 But that update doesn't change the software.
 In other words, it continues to move forward after the software is tagged.
 We know that describes a branch.
@@ -76,6 +82,7 @@ Branches are lightweight, which means they only contain differences from the poi
 You could even protect older branches that you don't want to receive updates.
 So there are other benefits to this strategy.
 
+// SAW: Don't try to simulate versions with folders or filenames; you lose all the benefits of a version control system.
 The point is, don't reinvent features of the version control system like branches.
 Just use those features.
 I'll admit branches are going to require some getting used to for writers.
@@ -83,16 +90,17 @@ Once they learn, it will pay them back.
 But that brings us back to "`teach them git`".
 
 Here's another question.
-What if you have two documention products that have different version numbers (or aren't otherwise versioned together?).
-Do those belong in the same repository?
+What if you have two documentation products that have different version numbers?
+Do they belong in the same repository?
 Think about creating a version branch.
 What do you do with the files in that branch which aren't part of that version?
 Do you delete them?
-How will that affect the ability to merge changes from that branch? If you leave them, what if they get updated.
-Where do those changes get routed.
+How will that affect the ability to merge changes from that branch?
+If you leave them, what if they get updated?
+Where do those changes get routed?
 
-It should be clear to you that we need separate repositories, each with one idea of a version line.
+It should be clear that we need separate repositories, each with one idea of a version line.
 The way I like to say it is that "`only files that are versioned together go together`".
 
-That means we need to start thinking about multiple documention repositories.
+That means we need to start thinking about multiple documentation repositories.
 That's the subject of the next challenge to solve.

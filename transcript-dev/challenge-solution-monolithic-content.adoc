@@ -62,7 +62,7 @@ Most site generators make the huge assumption that all content is stored in a si
 But this is no excuse for a bad practice.
 Simply find a tool that knows how to take content from multiple repositories and branches or build one.
 In fact, that's something I'm currently working on with a new project named Antora.
-Before Antora start processing contnet, the first step in its pipeline is to go out and gather the content.
+Before Antora start processing content, the first step in its pipeline is to go out and gather the content.
 That opens up a whole world of possibility for how to organize that content.
 
 Having a single repository for your documentation named documentation is a false designation.
