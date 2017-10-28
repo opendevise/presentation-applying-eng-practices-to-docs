@@ -1,9 +1,4 @@
-[.lead-in]
-Let's put ourselves in the shoes of the writer and consider some of the major challenges writers face.
-Then we'll think about what engineering practices we can apply to help overcome these challenges.
-//There are many engineering practices.
-//I'm going to focus on a few that I've found have the most impact.
-//I look forward to hearing which other practices you apply.
+include::intro.adoc[]
 
 include::challenge-solution-too-much-to-maintain.adoc[]
 
@@ -18,3 +13,5 @@ include::challenge-solution-poor-editing-workflow.adoc[]
 include::challenge-solution-versions-are-hard.adoc[]
 
 include::challenge-solution-monolithic-content.adoc[]
+
+include::conclusion.adoc[]

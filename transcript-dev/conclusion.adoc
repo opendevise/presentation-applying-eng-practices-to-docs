@@ -1,0 +1,17 @@
+Nearly everyone agrees we have a documentation problem.
+The situation is dire.
+We need to act.
+But the solution is not to try to turn engineers into writers.
+It's for engineers to solve engineering problems to free up writers to write.
+A tech writer is just as valuable to a software project as an engineer, so long as they are actually writing.
+(Just as the reverse would be true).
+We just need to make them productive.
+In the end, they will get the job done more efficiently and give the software an incredible curb appeal.
+And you won't be pestered about writing any more.
+
+So we reached into our back of tricks to find ways to improve the documentation process.
+There are many engineering practices we could draw from.
+In this talk, I focused on a few that I've found have the most impact with documentation.
+I look forward to hearing which other practices you apply.
+
+Thank you.

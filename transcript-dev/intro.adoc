@@ -1,0 +1,68 @@
+== Introduction
+
+Many of you may be familiar with the results of the survey GitHub conducted this year on the topic of Open Source software.
+I'll cut to the chase.
+The most widespread problem in Open Source is: "`Incomplete or confusing documentation`", as observed by 93% of respondents.
+(slide concept: problems-encountered-in-oss-chart.png from http://opensourcesurvey.org/2017/)
+I'll say that again.
+93%.
+Try to get 93% of people to agree on anything.
+That same survey concluded that "`documentation is highly valued, but often overlooked`"
+//and that "`documentation is a means for establishing inclusive and accessible communities.`"
+We're always looking for ways to get a leg up on the competition.
+Hello, an opportunity is staring us right in the face.
+
+Here's the reality.
+Documentation is a critical part of software engineering.
+In fact, it's the first aspect of software people usually encounter.
+And you know what they say about first impressions.
+I like to describe documentation as representing the curb appeal of your product.
+If the front porch is sagging, no one's even going to step through the front door.
+
+At its best, documentation helps people to become successful users of the software and understand how it works.
+At its worst, it holds the project back like a boat anchor.
+We want users to be riding high on the surf, not getting dragged to the bottom.
+So we're going to take a crack at this problem, but not in the way you may have heard in the past.
+
+To help improve this situation, you've probably been asked many times, perhaps even pressed, to write documentation.
+Unless you consider yourself a writer-developer, we all know you don't want to do that.
+(slide concept: "the resistance to [writing] documentation among developers is well known and needs no emphasis")
+I get it.
+So I'm not going to ask you to.
+In fact, I'm going to say the exact opposite.
+_Don't_ write documentation.
+What?
+That's blasphamy!
+Why on earth would I say that?
+
+//It's not that I don't believe in documentation and don't want to encourage you to help with it.
+It's not that I don't want to encourage you to help.
+I certainly do.
+I just don't want to encourage you to help in _that_ way.
+You see, it's pointless to try to turn engineers into tech writers, just as it would be pointless to try to turn tech writers into engineers.
+Each group has a unique and valuable skill set and we should be leveraging the talents of each group.
+Writers love writing.
+(slide concept: writers are valuable tweet; https://twitter.com/mojavelinux/status/831609585937088512)
+They are much more efficient at it than you because it's what they do.
+They know their audience and how to reach them.
+In the end, they end up costing the project less than if an engineer was tasked with the writing.
+What we want to do instead is learn to work together.
+To join forces.
+
+So here's my call.
+(slide concept: this is a call)
+Writers aren't writing because they are caught up in engineering problems.
+And, as you might expect, they are _really_ struggling with that part.
+You can help make the documentation better simply by sharing your engineering skills, experiences, practices, and know-how.
+You get to do what you love so writers can do what they love.
+And trust me, there's plenty of a roll for you, as I'll be highlighting in this talk.
+
+Documentation is just as much of an engineering discipline as software development, sometimes shockingly similar.
+So this is familiar territory for you.
+You have loads of experience and expertise to offer a documentation team.
+You get to come in and be a superhero for writers.
+In return, ding-ding-ding, they will write your docs.
+Together you will make a dent in this pervasive problem of poor documentation.
+
+Let's put ourselves in the shoes of the writer and consider some of the major challenges writers face.
+Then we'll think about what engineering practices we can apply to help overcome these challenges.
