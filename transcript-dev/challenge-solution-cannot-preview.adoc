@@ -1,7 +1,10 @@
 == Cannot Preview Site
 // TODO bootstrap author's environment
 
-When you join a project, the first thing you want to do, the first thing anyone wants to do, is to run it to see if it works.
+// Problem; Image
+Slide: _Possible image ideas: lost in the dark, can't figure out how to put up the tent, stuck under a tarp in the rain_
+
+When you join a project, the first thing you want to do, the first thing anyone wants to do, is run it and see if it works.
 After all, if you can't establish that it worked in the first place, how can you be sure whether your changes helped or hurt it?
 So you grab the project and you look for what?
 Of course, you look for a command you can execute to compile and run it.
@@ -11,10 +14,18 @@ If set up correctly, you should just be able to satisfy a few prerequisites to r
 
 I've seen a lot of documentation projects just consist of content, but no way to do anything with that content.
 I've seen others where there is a build, but the build doesn't work.
+
+// Humor; Meme
+Slide: Meme for it works on my machine
+// SAW: I've got some possibilities for this so don't worry about it
+
 You know, the old, "it works on my machine".
 The really disheartening part is when you do get the build working only to find out that what it builds isn't even remotely the same as what's running in production.
 
 Here's an excerpt from a real documentation project (though I'll hide the name to protect the victims).
+
+// Problem example; excerpt or screenshot?
+Slide: (Visual of quoted text below)
 
 > Docs are generated with DITA OT.
 Technically, we have a forked version of DITA OT.
@@ -25,12 +36,12 @@ That's a todo for later.
 
 Would you stand for this in your company?
 
-The purpose of a build is so everything that is needed to build the artifact, in this case a documentation site, is stored right there with the documentation.
+The purpose of a build is so everything that is needed to build the documentation site--this is your artifact--is stored right there with the documentation.
 There's no need for specialized knowledge, "oh, talk to Jean", and no information walks out the door when Jean decides to level up Jean's career at another company.
 It also makes it easier to onboard new writers when they are leveling up into your company.
 It's not just the paid employees either.
 The benefits of a proper build applies to anyone interacting with the project, including contributors.
-The quicker you can get contributors onboarded, and on the writing, the more likely you are to receive those contributions.
+The faster contributors get onboarded, and writing, the more likely you are to receive those contributions.
 In turn, it makes the documentation less expensive to maintain because you benefit from the long tail.
 You want those people out there who have the specialize knowledge to be motivated to share it.
 A working build is motivating.

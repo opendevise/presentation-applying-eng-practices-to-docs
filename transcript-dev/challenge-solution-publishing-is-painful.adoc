@@ -1,5 +1,8 @@
-// ci server carosel
+// ci server carousel
 = Publishing is Painful
+
+// Problem; Image
+Slide: Man free climbing on mountain side
 
 Once you make a change, you know people are going to ask when it will published.
 Heck, you want it published too.
@@ -10,16 +13,22 @@ But then there's this huge barrier they need to scale in order to get their word
 They find themselves quickly in over their heads because it's not a wall they know how to free climb.
 
 It shouldn't be.
-Every step between making a change and publishing should be completely automated.
-In engineering, we recognize this as the practice of continuous delivery.
-In writing, like to call it "`push to publish`".
-Then, all writers really do have to do is write.
+Every step between making a change and publishing should be automated.
 
-There's a lot more to gain from continuous delivery, push to publish, than just speed and producitivity.
-A CD process completely eradicates manual steps.
+// Solution; Typography
+Slide: Continuous delivery
+
+In engineering, we recognize this as the practice of continuous delivery.
+In writing, we call it "`push to publish`".
+
+There's a lot more to gain from continuous delivery, push to publish, than just speed and productivity.
+A CD process eradicates manual steps.
 And trust me, this is a place where manual steps love to fester.
-We worked with one client who required a person to manually run the build, then manually copy all the files to a CMS using a web interface, then manual press the publish button.
+We worked with one client who required a person to manually run the build, then manually copy all the files to a CMS using a web interface, then manually press the publish button.
 That's ludicrous.
+
+// Solution support
+Slide: _Something to show or represent the automated build_
 
 What you want is to be able to describe the entire publishing process in a script so you can run it exactly the same every time any time you want.
 That implies that the documentation has a build, but even more than that.
@@ -27,6 +36,9 @@ It means that all the configuration for the documentation site is stored with th
 The immediate benefit of a build is that it's makes the process self-documenting.
 You don't have the find the person with the specialized knowledge about how the documentation site is generated.
 It should all be right there in the build.
+
+// Solution support
+Slide: _Something to show or represent the CI job configuration - possibly a travis.yml file_
 
 So the build is a prerequisite for achieving push to publish.
 It also prevents drift between different environments.
@@ -37,10 +49,18 @@ I honestly feel sorry for the person who had to maintain them, except I really d
 And let me just tell you, a script that only lives in Jenkins is not a script that is tested.
 That story doesn't end well.
 
-Some teams may buy into this automation process, but be weary of the delivery part.
+////
+SAW: These 3 sentences don't really add anything to this discussion.
+
+Some teams may buy into this automation process, but be wary of the delivery part.
 Of course, you can add a gateway criteria for controlled releases.
 But the point is, that step should be as simple as pressing a button.
+////
+
 As soon as a step is introduced that only one person knows how to perform, or it's documented in a wiki page somewhere, you're free climbing again.
+
+// Solution support
+Slide: _Something to show or represent the webhook_
 
 We've talked about the publish part, but what about the push part.
 What triggers this process.
@@ -53,6 +73,9 @@ For example, you can have a webhook fire when code is pushed to the repository.
 The webhook will then send a ping to that application to let it know something interesting happened.
 The receiver of that webhook can be the CI server, which can target and trigger a specific job.
 
+// Takeaway; probably Typography
+Slide: Publishing should never be manual. Set up a push to publish CD pipeline for your docs.
+
 The bottom line is, if you want to improve the documentation process, the best thing you can do is set up CD, or push to publish.
 Publishing should never be manual.
 It's very hard on the writer and it leads to inconsistencies.
@@ -60,3 +83,5 @@ With push to publish in place, the writer can just walk right across the border 
 No barrier.
 
 Once the production pipeline is set up with push to publish, the next logical step is automation for staging environments and the local environment.
+
+// Note for me: Go to Cannot preview next
