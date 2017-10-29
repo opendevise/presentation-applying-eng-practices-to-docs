@@ -70,6 +70,7 @@ A great example of this are release notes.
 // Solution support
 Slide: _Something to show or represent auto-generated doc files_
 
+//suggest commitlint here
 I knew a documentation team that was creating release notes files for every release of every product, for which there were many.
 Why would a writer be recreating release notes files when all that information is available elsewhere, such as in the issue tracker or VCS log.
 It would kind of be like writing the JavaDoc manually.

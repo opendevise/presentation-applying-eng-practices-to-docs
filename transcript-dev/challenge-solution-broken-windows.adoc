@@ -52,6 +52,8 @@ A build is usually a prerequisite for having a CI job, so it serves double duty 
 What the problem of broken links led us to is the practice of using static analysis / linter to check for mistakes, such as broken links.
 We want to run those checks at the very latest in CI, which means we need a build to provide a simple interface to these types of tools.
 
+// ex. java.net broken links; isolate them so they only have to be changed in one place
+
 Problems like broken links is not something you want to put off.
 If you let it go, it quickly grows into a big hairy beast and it becomes really difficult to get out in front of it again.
 Trust me, I just went through it with a client and it was like trying to kill a hydra.

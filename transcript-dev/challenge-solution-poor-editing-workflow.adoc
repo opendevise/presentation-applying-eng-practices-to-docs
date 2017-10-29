@@ -4,6 +4,10 @@ SAW: I'm going to need to work on this one in layers, it's too "surface layer" a
 But I'm pretty sure I know how to fix it and make it realize its full potential.
 ////
 
+////
+If you link to a wiki page or Google docs, can we just acknowledge that means that your documentation workflow is problematic.
+////
+
 Imagine you're sitting at your desk hacking away on some code when you receive an e-mail from another programmer.
 
 // Problem; Screenshot

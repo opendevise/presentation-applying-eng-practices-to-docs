@@ -1,16 +1,15 @@
-// ci server carousel
-= Publishing is Painful
+= Publishing is Strenuous
 
-// Problem; Image
-Slide: Man free climbing on mountain side
+// .challenge; Image
+Slide: Man free climbing on mountain slope
 
 Once you make a change, you know people are going to ask, "`When will published?`"
 Heck, you want to get it published too.
 But right now, this is an extremely painful process for writers.
 You see, the writing part is natural for them.
 It's what they do.
-But then there's this huge barrier they need to scale in order to get their words to a place where people can read them.
-They find themselves quickly in over their heads because it's not a wall they know how to free climb.
+But then there's this huge barrier they need to scale in order to get their words to a place people can read them.
+They find themselves quickly in over their heads because it's not a rock face they know how to free climb.
 
 Just think about a project you've worked on that required a manual release.
 The first thing you have to do is remember what steps are even necessary.
@@ -20,7 +19,7 @@ And that can be very painful.
 It shouldn't be.
 Every step between making a change and publishing should be automated.
 
-// Solution; Typography
+// .solution; Typography
 Slide: Continuous delivery
 
 In engineering, we recognize this as the practice of continuous delivery.
@@ -30,21 +29,22 @@ A writer makes a change and submits a pull request.
 The reviewer approves that change and merges it to master.
 From there, it goes straight to production (barring any gateway criteria).
 
-There's a lot more to gain from continuous delivery, push to publish, than just speed and productivity.
+There's a lot more to gain from continuous delivery--push to publish--than speed and productivity.
 A CD process eradicates manual steps.
 And trust me, this is a place where manual steps love to fester.
 We worked with one client who required a person to manually run the build, then manually copy all the files to a CMS using a web interface, then manually press the publish button.
 That's ludicrous.
 
-// Solution support
+// Solution support; like travis deployment config
 Slide: _Something to show or represent the automated build_
 
-What you want is to be able to describe the entire publishing process in a script so you can run it exactly the same every time any time you want.
-That implies that the documentation has a build, but even more than that.
-It means that all the configuration for the documentation site is stored with the build, the practice of configuration as code.
-The immediate benefit of a build is that it's makes the process self-documenting.
-You don't have the find the person with the specialized knowledge about how the documentation site is generated.
-It should all be right there in the build.
+What you want is to be able to describe the entire publishing process in a script (better yet, a configuration file) so you can run it exactly the same every time any time you want.
+That implies the documentation has a build.
+But it's even more than that.
+It means that all the configuration for the documentation site is stored with the build, which is the practice of configuration as code.
+The immediate benefit of CD is that it's makes the entire process self-documenting.
+You don't have the find the person with the specialized knowledge about how the documentation site is published.
+It should all be right there in the job definition.
 
 // Solution support
 Slide: _Something to show or represent the CI job configuration - possibly a travis.yml file_
@@ -82,14 +82,14 @@ For example, you can have a webhook fire when code is pushed to the repository.
 The webhook will then send a ping to that application to let it know something interesting happened.
 The receiver of that webhook can be the CI server, which can target and trigger a specific job.
 
-// Takeaway; probably Typography
+// .takeaway; probably Typography
 Slide: Publishing should never be manual. Set up a push to publish CD pipeline for your docs.
 
-The bottom line is, if you want to improve the documentation process, the best thing you can do is set up CD, or push to publish.
-Publishing should never be manual.
+Publishing should never be a manual process.
 It's very hard on the writer and it leads to inconsistencies.
+The bottom line is, if you want to make documentation less strenuous, the best thing you can do is set up CD, or push to publish.
 With push to publish in place, the writer can just walk right across the border between development and production.
-No barrier.
+No barriers to scale.
 
 Once the production pipeline is set up with push to publish, the next logical step is automation for staging environments and the local environment.
 

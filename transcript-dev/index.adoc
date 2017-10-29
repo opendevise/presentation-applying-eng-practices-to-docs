@@ -1,3 +1,23 @@
+= Applying Engineer Practices to Documentation: Transcript
+
+////
+.Practices
+* Version control
+* Integrated contribution workflow
+* Static Analysis
+* Continuous Integration
+* Continuous Deployment
+* Automated Builds
+* DRY
+* Modularization
+
+.Flow
+* problem (often coupled with brief story)
+* overarching solution
+* applied examples
+* wrap-up / transition
+////
+
 include::intro.adoc[]
 
 include::challenge-solution-too-much-to-maintain.adoc[]

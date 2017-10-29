@@ -1,5 +1,6 @@
 == Cannot Preview Site
 // TODO bootstrap author's environment
+// ci server carousel
 
 // Problem; Image
 Slide: _Possible image ideas: lost in the dark, can't figure out how to put up the tent, stuck under a tarp in the rain_
@@ -49,7 +50,9 @@ A broken build is not.
 
 In short, a build makes the process reproducible.
 If done right, it should be building exactly what's running in production in the local environment.
-Even better is if the build is also containerized so you're quite literally running the container that is run in production.
+Even better is if the build is containerized.
+A container replaces project-specific prerequisites (like Java and Gradle) with a universal prerequisite, such as Docker.
+Not only does it cut out a bunch of steps, you're quite literally running the container that's run in production.
 That ensures no drift occurs between what the writers are working on and what's being published...and no unpleasant surprises when it gets published.
 Everyone is previewing the same way and therefore everyone has the same picture of how things look and work.
 
