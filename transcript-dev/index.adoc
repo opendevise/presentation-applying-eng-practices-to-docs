@@ -24,6 +24,7 @@ include::challenge-solution-too-much-to-maintain.adoc[]
 
 include::challenge-solution-publishing-is-painful.adoc[]
 
+//maybe cannot preview (can't get it to work) should be first?
 include::challenge-solution-cannot-preview.adoc[]
 
 include::challenge-solution-broken-windows.adoc[]

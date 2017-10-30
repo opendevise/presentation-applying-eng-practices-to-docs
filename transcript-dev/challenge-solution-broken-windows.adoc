@@ -56,6 +56,7 @@ At the very least, you want to run the linter in continuous integration.
 That should catch any errors before they make it into a release or deployment.
 Ideally, you'd run it sooner than CI.
 You probably want instant feedback, which means running it in a development workspace, perhaps on save in an IDE or a pre-commit hook.
+Textlint is also a fixer, so you can even automate the fix itself.
 In order to be able to run that tool easily, it should be integrated into a build.
 That means we need to have a build for our documentation, at the very least to run the linter.
 A build is usually a prerequisite for having a CI job, so it serves double duty for us.

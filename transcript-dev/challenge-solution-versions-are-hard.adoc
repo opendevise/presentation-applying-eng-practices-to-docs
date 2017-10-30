@@ -15,8 +15,8 @@ Talk to any technical writer for a while about managing documentation and you'll
 
 They're certainly right that not having to deal with versions is simpler than having versions.
 But versions are inevitable.
-They are just a fact of software life.
 Time continues to move forward and thus we end up with different versions of things.
+It's a fact of software life.
 And since software has versions, so must the documentation that documents the software.
 We certainly spend enough time talking about versions in software (current debate about Java versions included), so we may have a practice or two to share.
 
@@ -34,7 +34,7 @@ This is the main thing we mean when we say "`docs as code`".
 Let's talk about what isn't version control.
 What isn't version control is adding a version number to a filename.
 What isn't version control is storing modification history inside a file.
-What isn't version control is simply overwriting the file with changes.
+What isn't version control is overwriting the file with changes.
 What isn't version control is a binary format that can't be diffed to inspect changes.
 
 But I've seen all of these things done in the name of documentation.
