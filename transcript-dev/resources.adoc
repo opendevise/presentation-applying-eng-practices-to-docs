@@ -1,5 +1,7 @@
 = Resources
 
+* https://www.atlassian.com/blog/bitbucket/5-pull-request-must-haves
+* http://justinhileman.info/article/changing-history/
 * https://pronovix.com/blog/treat-docs-code
 * http://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/
 * https://hackernoon.com/a-documentation-crash-course-45006a85c15c
