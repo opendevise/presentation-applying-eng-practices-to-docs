@@ -17,7 +17,7 @@ var pkg = require('./package.json'),
   source = require('vinyl-source-stream'),
   stylus = require('gulp-stylus'),
   through = require('through'),
-  uglify = require('gulp-uglify'),
+  uglify = require('gulp-uglify-es').default,
   isDist = process.argv.indexOf('serve') === -1,
   // browserifyPlumber fills the role of plumber() when working with browserify
   browserifyPlumber = function(e) {
@@ -96,7 +96,7 @@ gulp.task('clean:fonts', function() {
 });
 
 gulp.task('connect', ['build'], function() {
-  connect.server({ root: 'dist', port: process.env.PORT || 8000, livereload: true });
+  connect.server({ root: 'dist', port: process.env.PORT || 8000, livereload: false });
 });
 
 gulp.task('watch', function() {

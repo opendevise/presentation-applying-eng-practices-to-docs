@@ -1,68 +1,31 @@
-*, ::before, ::after
-  box-sizing inherit
+.deck
+  font-family 'Saira', sans-serif
+  font-size 3.25rem
 
-html
-  box-sizing border-box
-  // NOTE reset base font size to browser default to normalize between browsers
-  font-size 16px
+a
+  color $text
+
+h1, h2, h3, h4, h5, h6
+  font-weight 600
+  line-height 1
+  margin 0
+  &:not(.fit)
+    letter-spacing -0.015em
+
+ul
+  margin 1em 0 0 0
+  padding 0
+  list-style none
 
 figure
   margin 0
 
-img, video
-  vertical-align middle
+pre, code
+  font-family 'Overpass Mono', monospace
+  letter-spacing -0.015em
 
-.deck
-  overflow hidden
-  font-feature-settings "kern" 1
-  text-rendering optimizeLegibility
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  // NOTE hide deck and slide content until Bespoke.js classes have been added
-  &:not(.bespoke-parent), section:not(.bespoke-slide)
-    display none
-
-.bespoke-parent, .bespoke-scale-parent
-  position absolute
-  top 0
-  right 0
-  bottom 0
-  left 0
-
-.bespoke-scale-parent, .bespoke-slide
-  pointer-events none
-
-.bespoke-slide
-  overflow hidden
-  // NOTE force opacity to start at 0 to avoid transition on load when using bespoke-scale
-  opacity 0
-  background-color #fff
-  position absolute
-  top 50%
-  left 50%
-  width 640px
-  margin-left -(@width / 2)
-  height 480px
-  margin-top -(@height / 2)
-  display flex
-  flex-direction column
-  align-items center
-  justify-content center
-  //transition opacity 200ms ease-in-out 150ms
-
-.bespoke-active
-  pointer-events auto
-  opacity 1
-  // NOTE Webkit requires z-index to be 1 for elements to receive focus (may no longer apply)
-  z-index 1
-
-.bespoke-inactive
-  transition-delay 0
-
-.bespoke-bullet
-  //transition opacity 200ms ease-in-out
-  &-inactive
-    visibility hidden
-
-aside[role=note], aside[role=notes]
-  display none
+.line
+  display block
+  white-space nowrap
+  .fit &
+    width fit-content

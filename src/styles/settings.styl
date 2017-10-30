@@ -1,0 +1,36 @@
+$slide-width = 1280px
+$slide-height = 720px
+$c-black = hsl(0, 0%, 0%)
+//$c-black-bis = rgb(25, 25, 25)
+$c-black-bis = hsl(0, 0%, 15.5%)
+//$c-black-ter = 
+$c-gray = rgb(117, 117, 120)
+$c-gray-lighter = rgb(247, 247, 247)
+$c-white = rgb(255, 255, 255)
+$c-prm = #03a9f4
+$c-bis = #3beb95
+$c-ter = #f44e03
+//$c-prm = #2eb4e9
+//$c-bis = #88c64b
+//$c-ter = #f9a920
+//$c-qua = #ed5a48
+//$c-prm = rgb(29, 151, 173)
+//$c-bis = rgb(48, 161, 87)
+//$c-ter = rgb(215, 72, 95)
+//$c-prm-hi = rgb(41, 213, 245)
+//$c-bis-hi = rgb(135, 223, 143)
+//$c-dark = ...
+//$c-light = ...
+
+$text = $c-black
+//$text-invert = rgb(245, 248, 250)
+$text-invert = hsl(0, 0%, 96%)
+
+pct(val, percentage)
+  val * (percentage / 100)
+
+sw(percentage)
+  pct($slide-width, percentage)
+
+sh(percentage)
+  pct($slide-height, percentage)

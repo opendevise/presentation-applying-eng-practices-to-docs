@@ -4,9 +4,402 @@ Dan Allen
 :imagesdir: images
 :source-highlighter: coderay
 :coderay-css: style
+:icons: font
 
-== A
+== !
 
-== B
+> The resistance to [writing] documentation among developers is well known and needs no emphasis.
+> -- James D Herbsleb
 
-== C
+== !
+
+image::problems-encountered-in-oss-chart.png[,75%]
+
+[.tweet]
+== !
+
+++++
+<blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-width="375">
+<p>A talented tech writer is worth as much as a talented developer. Good prose is no more or less complex to write than good code.</p>&mdash; Dan Allen ✊ (@mojavelinux) <a href="https://twitter.com/mojavelinux/status/831609585937088512">February 14, 2017</a></p>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+[.shout%slice%fit]
+== This is a  Call  to Engineers
+
+[.practices]
+== !
+
+* DRY
+* Continuous Deployment
+* Automated Builds
+* Static Analysis
+* Continuous Integration
+//* Integrated contribution workflow
+* Integrated Contribution Process
+* Version Control
+* Modularization
+
+//* Version Control
+//* Static Analysis
+//* Continuous Integration
+//* Continuous Deployment
+//* Containers
+//* DRY
+//* Modularity
+//* Standard Process
+
+[.challenge.too-much-to-maintain%slice]
+== Too Much  to Maintain
+//== Too Much  to Cover
+
+image::lightbulbs.jpg[role=canvas]
+
+[.topic]
+== D·R·Y
+
+[.topic]
+== N·D·I
+
+[%slice]
+== Smarter  not harder
+
+//[.topic]
+//== Code Generation
+
+[.challenge.publishing-is-strenuous%slice]
+== Publishing  is Strenuous
+
+image::free-climbing.jpg[role=canvas]
+
+[.topic]
+== Continuous Deployment
+
+[.subtopic]
+== "`Push to Publish`"
+
+[.code]
+== !
+
+//[source,yaml]
+.{blank}.travis.yml (GitHub Pages Deployment)
+----
+script: generate-site
+...
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  local_dir: _site
+  skip_cleanup: true
+  on:
+    branch: master
+    condition: $DEPLOYMENT = is-a-go
+----
+
+[.code]
+== !
+
+//[source,yaml]
+.{blank}.travis.yml (S3 Website Hosting Deployment)
+----
+script: generate-site
+...
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  local_dir: _site
+  bucket: acme-docs
+  skip_cleanup: true
+  on:
+    branch: master
+----
+
+[.code]
+== !
+
+//[source,yaml]
+.{blank}.travis.yml (Custom Deployment)
+----
+script: generate-site
+...
+deploy:
+  provider: script
+  script: aws s3 sync _site s3://acme-docs --delete
+  skip_cleanup: true
+  on:
+    branch: master
+----
+
+[.shout%slice%fit]
+== What Makes It  Fire?
+
+== !
+
+[%build]
+* On a fixed schedule
+* When the site project changes
+* When content changes
+
+[.subtopic]
+== Webhooks
+
+[.shout%slice%fit]
+== Ping!  This Just Happened
+
+== !
+
+image::webhook-delivery.png[,100%]
+
+//[.statement%slice]
+//== Why All  Your Docs  Belong To Us
+
+[.statement%slice]
+== Automate Every Step&#58;  From Pushing Changes  to Publishing Them
+
+image::mountain-cable-car.jpg[role=canvas]
+
+[.challenge]
+== Can't Preview Site
+
+image::originals/lost-at-work.jpg[role=canvas]
+
+[.topic]
+== Automated Build
+
+//[.topic]
+//== Container
+
+//[.topic]
+//== Branch Builds
+
+[.challenge.broken-windows]
+== Broken Windows
+
+image::broken-window.jpg[role=canvas]
+
+// FIXME change to in-place build sequence
+[.concept]
+== !
+
+icon:chain[]
+
+[.concept]
+== !
+
+icon:chain-broken[]
+
+[.concept]
+== !
+
+icon:chain[]
+
+[.topic]
+== Static Analysis
+
+[.subject.textlint]
+== !
+
+image::logos/textlint-banner.png[,100%]
+
+== What can we check for?
+
+[%build]
+* incorrect spelling
+* forbidden words
+* document / block length
+* structural errors
+* weak language
+* broken references
+
+[.code.dense]
+== !
+
+//[source,js]
+----
+const LinkMacroRx = /(http(s)?:\/\/[^\[]+)\[[\s\S]*?\]/g
+
+module.exports = ({ RuleError, report }) => ({
+  'ParagraphNode': (node) => {
+    node.children.forEach((line) => {
+      let match
+      while ((match = LinkMacroRx.exec(line.raw)) != null) {
+        if (match[2] != null) continue
+        const error = new RuleError(
+          `Illegal link to a non-secure URL: ${match[1]}`,
+          { index: match.index })
+        report(line, error)
+      }
+    })
+  }
+})
+----
+
+[.code]
+== !
+
+....
+$ node validate
+
+server-docs/modules/ROOT/content/user-manual.adoc
+
+  14:124  error  Illegal link to a non-secure URL:
+                 http://example.com (non-secure-url)
+
+✖ 1 problem (1 error, 0 warnings)
+....
+
+[.code]
+== !
+
+....
+$ node validate
+
+server-docs/modules/ROOT/content/user-manual.adoc
+
+  14:124  error  Illegal link to a non-secure URL:
+                 http://example.com (non-secure-url)
+  23:7    error  Reference to missing page:
+                 migration.adoc (broken-page-ref)
+
+✖ 2 problems (2 errors, 0 warnings)
+....
+
+[.topic]
+== Continuous Integration
+
+// FIXME change to ul
+[.ci-build-script]
+== !
+
+[%hardbreaks]
+Continuous Integration
+Continuous Integration
+Continuous Integration
+Continuous Integration
+Continuous Integration
+Continuous Integration
+Continuous Integration
+Continuous Integration
+*Automated Build.*
+Continuous Integration
+Continuous Integration
+Continuous Integration
+
+[.code]
+== !
+
+.travis.yml
+//[source,yml]
+----
+language: node_js
+node_js: ['8']
+script: gulp lint
+----
+
+// add build failing badge?
+
+[.shout%slice%fit]
+== include::[]  All  Examples
+
+[.code]
+== !
+
+//[source,groovy]
+----
+xmlDeclaration()
+cars {
+  //tag::each[]
+  cars.each {
+    car(make: it.make, model: it.model)
+  }
+  //tag::each[]
+}
+----
+
+[.code]
+== !
+
+....
+[source,groovy]
+----
+\include::{samplesdir}/cars.groovy[tag=each,indent=0]
+----
+....
+
+[.statement.broken-windows-takeaway%slice]
+== Be Proactive.  Catch Problems When  They're Easy to Fix.
+
+image::computer-help.svg[]
+
+== Unsorted Slides >>
+
+[.code]
+== !
+
+//[source,yml]
+----
+content:
+  sources:
+  - url: https://github.com/acme/solutions-docs.git
+  - url: /home/username/projects/core-docs
+    branches: v2.5, v3.0, v3.1
+  - url: git@github.com:acme/rest-client-docs.git
+    branches: v2*
+----
+
+[.tweet]
+== !
+
+++++
+<blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-width="375">
+<p>i hate git i hate git i hate git i hate git i hate git</p>&mdash; Máirín Duffy (@mairin) <a href="https://twitter.com/mairin/status/922799825116106752">October 24, 2017</a></p>
+</blockquote>
+++++
+
+[.teach-them-git]
+== Teach Them Git
+
+image::professortocat.png[]
+
+//== !
+//
+//image::preview/turtle-on-wheels.jpg[,100%]
+
+[.challenge.versions-are-hard]
+== Versions are Hard
+
+image::mismatched-shoes.jpg[role=canvas]
+
+[.topic]
+== Version Control
+
+[.challenge]
+== Monolithic Content
+
+[.topic]
+== Modularity
+
+[.challenge.collaboration-is-unruly]
+== Collaboration is Unruly
+//== Collaboration is Disjointed
+
+image::throw-papers.jpg[role=canvas]
+
+[.topic]
+== Integrated Contribution Workflow
+
+[.credits]
+== Credits
+
+* http://opensourcesurvey.org
+* https://octodex.github.com/images/Professortocat_v2.png
+* https://www.pexels.com/photo/action-adventure-challenge-climb-449609/
+* https://www.pexels.com/photo/bright-bulbs-crowded-electric-light-383838/
+* https://www.pexels.com/photo/cable-car-above-snow-covered-mountain-119815/
+* https://pixabay.com/en/broken-glass-shattered-glass-broken-2208593/
+* https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/
+* https://www.pexels.com/photo/man-person-legs-grass-539/
+* https://www.pexels.com/photo/office-mail-business-work-8777/
+* https://pixabay.com/en/computer-hand-help-laptop-helping-2851285/
