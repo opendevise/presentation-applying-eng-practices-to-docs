@@ -10,7 +10,7 @@ Oh yes.
 You know it.
 Break links.
 
-That's not totally fair.
+Now, that's not totally fair.
 The link was probably right at some point.
 But as Heraclitus would say, "the only thing that is constant is change", so broken links happen because life happens.
 
@@ -27,7 +27,15 @@ What engineering practice do we use to catch coding errors and invalid syntax?
 You may have said static (program) analysis.
 Others may have said linting.
 
-We use static analysis, and in particular a linter, to make sure we didn't goof anything up and to check that the style of the source adheres to a standard.
+A linter is a static analysis tool that detects and flags errors in source code, including stylistic errors.
+We use a linter to make sure we didn't goof up anything and also to check that we've adhered to style guidelines.
+One tool we can use for this is textlint.
+
+Textlint is a pluggable linting tool for text, in particular documentation.
+The key word here is pluggable.
+Textlint sets you up to write custom rules or integrate existing ones.
+So what rules do we apply?
+
 Technical writing is ripe with problems we can check for, perhaps even more so than source code.
 We could check spelling, bad words, sentence length, document length, syntax errors, etc.
 One of those problems is broken links or other types of references.
@@ -37,6 +45,9 @@ Just imagine never having to worry about a broken link again.
 It's like not having to worry about compiler errors.
 We you see it happens, you fix it immediately, and get right back to coding.
 Likewise, the writer can get right back to writing.
+
+Let's look at an example of one such rule.
+(example)
 
 Static analysis is performed by an automated tool.
 Automation is itself an engineering practice.
@@ -64,7 +75,7 @@ Check the problems early while they are small and in context.
 That way they are manageable and quick to fix.
 When someone asks if you have any broken links you're like, "pfff, never".
 
-Before you get too confident, can you say the same for the examples.
+Before you get too confident, can you say the same for the examples?
 Documentation is notorious for having broken examples.
 Short of obsessively trying the examples in the documentation, how can you be sure they all work?
 What engineering practice can we apply?
@@ -92,5 +103,6 @@ Either way, it means the writer no longer has to hand edit it, which means the d
 
 The defense against broken windows is eternal.
 But it's not one that a human has to take on.
-This is why we have computers.
-If you take the time to set up validations on the content, and source examples from a tested project, then you've hardened the process to avoid broken windows from making it to production.
+That's why we have CI.
+It let's you get out in front of problems and stay in front of them.
+If you take the time to set up validations on the content, and include examples from a tested project, then you've hardened the process and prevent broken windows from creeping into production.
