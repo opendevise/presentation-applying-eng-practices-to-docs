@@ -198,8 +198,8 @@ icon:chain[]
 [.topic]
 == Static Analysis
 
-[.subject.textlint]
-== !
+[%conceal.subject.textlint]
+== textlint
 
 image::logos/textlint-banner.png[,100%]
 
@@ -335,20 +335,6 @@ image::computer-help.svg[]
 
 == Unsorted Slides >>
 
-[.code]
-== !
-
-//[source,yml]
-----
-content:
-  sources:
-  - url: https://github.com/acme/solutions-docs.git
-  - url: /home/username/projects/core-docs
-    branches: v2.5, v3.0, v3.1
-  - url: git@github.com:acme/rest-client-docs.git
-    branches: v2*
-----
-
 [.tweet]
 == !
 
@@ -375,11 +361,49 @@ image::mismatched-shoes.jpg[role=canvas]
 [.topic]
 == Version Control
 
+== ≠ Version Control
+
+[%build.has-text-centered]
+* user-manual-v1.1.html
+* <revhistory>...</revhistory>
+* icon:file-word-o[]
+* icon:eraser[]
+
+== !
+
+image::git-log.png[,100%]
+
+== !
+
+image::git-log.svg[,200]
+
+//== !
+//
+//image::insane-version-structure.png[,100%]
+
+== !
+
+image::branching.svg[role=grow]
+
 [.challenge]
 == Monolithic Content
 
 [.topic]
 == Modularity
+
+[.code]
+== !
+
+//[source,yml]
+----
+content:
+  sources:
+  - url: https://github.com/acme/solutions-docs.git
+  - url: /home/username/projects/core-docs
+    branches: v2.5, v3.0, v3.1
+  - url: git@github.com:acme/rest-client-docs.git
+    branches: v2*
+----
 
 [.challenge.collaboration-is-unruly]
 == Collaboration is Unruly
@@ -389,6 +413,10 @@ image::throw-papers.jpg[role=canvas]
 
 [.topic]
 == Integrated Contribution Workflow
+
+== !
+
+image::pull-request.png[,100%]
 
 [.credits]
 == Credits
@@ -403,3 +431,5 @@ image::throw-papers.jpg[role=canvas]
 * https://www.pexels.com/photo/man-person-legs-grass-539/
 * https://www.pexels.com/photo/office-mail-business-work-8777/
 * https://pixabay.com/en/computer-hand-help-laptop-helping-2851285/
+* https://www.atlassian.com/git/tutorials/using-branches 
+* https://confluence.atlassian.com/display/STASH0311/Using+pull+requests+in+Stash

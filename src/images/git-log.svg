@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 600" version="1.1">
+<g stroke="#404040" stroke-width="4" stroke-miterlimit="10" transform="translate(77,52.699982)" fill="#b3e3ff">
+<path d="m22.999998 56.600035v437.949355" class="st6"/>
+<circle transform="rotate(90)" class="st6" cy="-23" cx="77.600037" r="21"/>
+<circle transform="rotate(90)" class="st6" cy="-23" cx="177.00003" r="21"/>
+<circle transform="rotate(90)" class="st6" cy="-23" cx="277" r="21"/>
+<circle transform="rotate(90)" class="st6" cy="-23" cx="377" r="21"/>
+<circle transform="rotate(90)" class="st6" cy="-23" cx="477" r="21"/>
+</g>
+<text style="word-spacing:0px;letter-spacing:0px" font-weight="500" xml:space="preserve" font-size="24px" line-height="125%" y="55.647995" x="61.852001" font-family="sans-serif" fill="#404040"><tspan y="55.647995" x="61.852001">git log</tspan></text>
+</svg>
