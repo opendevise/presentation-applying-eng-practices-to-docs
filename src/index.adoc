@@ -13,7 +13,7 @@ Dan Allen
 
 == !
 
-image::problems-encountered-in-oss-chart.png[,75%]
+image::problems-encountered-in-oss-chart.svg[role=grow]
 
 [.tweet]
 == !
