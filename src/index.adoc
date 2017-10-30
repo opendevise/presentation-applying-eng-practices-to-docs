@@ -138,9 +138,9 @@ deploy:
 == !
 
 [%build]
-* On a fixed schedule
-* When the site project changes
-* When content changes
+* Fixed schedule
+* Site project changes
+* Content changes
 
 [.subtopic]
 == Webhooks
