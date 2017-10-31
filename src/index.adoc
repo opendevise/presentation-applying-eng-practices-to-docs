@@ -55,8 +55,8 @@ image::problems-encountered-in-oss-chart-hi.svg[role=grow]
 //* Modularity
 //* Standard Process
 
-[.challenge.too-much-to-maintain%slice]
-== Too Much  to Maintain
+[.challenge.too-much-to-manage%slice]
+== Too Much  to Manage
 //== Too Much  to Cover
 
 image::lightbulbs.jpg[role=canvas]
