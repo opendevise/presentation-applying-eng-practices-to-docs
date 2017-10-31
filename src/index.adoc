@@ -15,6 +15,11 @@ Dan Allen
 
 image::problems-encountered-in-oss-chart.svg[role=grow]
 
+// TODO callout the 93% with a bubble
+== !
+
+image::problems-encountered-in-oss-chart-hi.svg[role=grow]
+
 [.tweet]
 == !
 
