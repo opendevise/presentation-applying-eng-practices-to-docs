@@ -1,41 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 799.99353 338.98184">
-<g transform="translate(145.44312 .86882381)" stroke="#e1e4e8" stroke-linecap="round" fill="none">
-<g stroke-dasharray="4.24420246, 4.24420246" stroke-width="1.06105065">
-<path d="m610.14017 301.72257v-234.921008"/>
-<path d="m523.02675 301.72257v-234.921008"/>
-<path d="m348.40065 301.72257v-234.921008"/>
-<path d="m261.0876 301.72257v-234.921008"/>
-<path d="m173.24538 301.72257v-234.921008"/>
-</g>
-<path d="m-144.90642 53.542993h798.92015" stroke-width="1.05833328"/>
-<path d="m435.18453 301.72257v-234.921008" stroke-dasharray="4.24420246, 4.24420246" stroke-width="1.06105065"/>
-</g>
-<g transform="translate(145.44312 .86882381)" fill="#03a9f4">
-<rect height="18" width="71.733803" y="282.16998" x="172.80548"/>
-<rect height="18" width="139.35744" y="240.03633" x="172.80548"/>
-<rect height="18" width="197.25542" y="198.13232" x="172.80548"/>
-<rect height="18" width="245.42776" y="156.09933" x="172.80548"/>
-<rect height="18" width="342.07639" y="114.16615" x="172.80548"/>
-<rect height="18" width="404.98917" y="72.133156" x="172.80548"/>
-</g>
-<g fill="#000000" font-family="sans-serif" transform="translate(145.44312 .86882381)">
-<g font-size="10.58333302px">
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="85.749931" x="-127.85563"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="14.8166666px" y="85.749931" x="-127.85563" stroke-width=".26458332">Incomplete or confusing documentation</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="127.78309" x="28.375486"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="14.8166666px" y="127.78309" x="28.375486" stroke-width=".26458332">Unresponsiveness</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="169.71609" x="5.351615"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="14.8166666px" y="169.71609" x="5.351615" stroke-width=".26458332">Dismissive responses</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="212.65602" x="105.64883"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="14.8166666px" y="212.65602" x="105.64883" stroke-width=".26458332">Conflict</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="253.65285" x="3.0691299"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="14.8166666px" y="253.65285" x="3.0691299" stroke-width=".26458332">Unexplained rejection</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="295.78677" x="-88.000031"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="14.8166666px" y="295.78677" x="-88.000031" stroke-width=".26458332">Unwelcoming language or content</tspan></text>
-</g>
-<g font-size="13.40555573px">
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="325.7522" x="162.57104"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="13.40555573px" y="325.7522" x="162.57104" stroke-width=".26458332">0%</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="325.7522" x="246.13078"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="13.40555573px" y="325.7522" x="246.13078" stroke-width=".26458332">20%</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="325.7522" x="333.60748"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="13.40555573px" y="325.7522" x="333.60748" stroke-width=".26458332">40%</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="325.7522" x="420.25061"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="13.40555573px" y="325.7522" x="420.25061" stroke-width=".26458332">60%</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="325.7522" x="508.10593"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="13.40555573px" y="325.7522" x="508.10593" stroke-width=".26458332">80%</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" line-height="1.25" y="325.7522" x="590.70453"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="13.40555573px" y="325.7522" x="590.70453" stroke-width=".26458332">100%</tspan></text>
-</g>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" font-weight="bold" xml:space="preserve" font-size="19.75555611px" line-height="1.25" y="23.665789" x="46.074181"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-weight="bold" font-size="19.75555611px" y="23.665789" x="46.074181" stroke-width=".26458332">Problems encountered in open source</tspan></text>
-<text style="font-variant-ligatures:normal;letter-spacing:-.0238125px;font-variant-numeric:normal;word-spacing:0px;font-variant-caps:normal" xml:space="preserve" font-size="12.69999981px" line-height="1.25" y="41.758793" x="160.40536"><tspan style="font-variant-ligatures:normal;letter-spacing:-.06879167px;font-variant-numeric:normal;word-spacing:-1.26999998px;font-variant-caps:normal;font-feature-settings:normal" font-family="sans-serif" font-size="12.69999981px" y="41.758793" x="160.40536" stroke-width=".26458332" fill="#828282">Source: opensourcesurvey.org</tspan></text>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg14273" width="3059.4" height="1199.2" version="1.1" viewBox="0 0 809.46026 317.28584" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata id="metadata14270">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer2" transform="translate(154.91 -8.6562)" fill="none" stroke="#e1e4e8" stroke-linecap="round">
+  <g stroke-dasharray="4.24420246, 4.24420246" stroke-width="1.0611">
+   <path id="path14944" d="m610.14 301.72v-234.92"/>
+   <path id="path15034" d="m523.03 301.72v-234.92"/>
+   <path id="path15048" d="m348.4 301.72v-234.92"/>
+   <path id="path15050" d="m261.09 301.72v-234.92"/>
+   <path id="path15052" d="m173.25 301.72v-234.92"/>
+  </g>
+  <path id="path15054" d="m-144.91 53.543h798.92" stroke-width="1.0583"/>
+  <path id="path15056" d="m435.18 301.72v-234.92" stroke-dasharray="4.24420246, 4.24420246" stroke-width="1.0611"/>
+ </g>
+ <g id="layer3" transform="translate(154.91 -8.6562)" fill="#03a9f4">
+  <rect id="rect14947" x="172.81" y="282.17" width="71.734" height="18"/>
+  <rect id="rect14949" x="172.81" y="240.04" width="139.36" height="18"/>
+  <rect id="rect14951" x="172.81" y="198.13" width="197.26" height="18"/>
+  <rect id="rect14953" x="172.81" y="156.1" width="245.43" height="18"/>
+  <rect id="rect14955" x="172.81" y="114.17" width="342.08" height="18"/>
+  <rect id="rect14957" x="172.81" y="72.133" width="404.99" height="18"/>
+ </g>
+ <g id="layer4" transform="translate(154.91 -8.6562)" fill="#000000" font-family="sans-serif" letter-spacing="-.023812px" stroke-width=".26458" word-spacing="0px">
+  <g font-size="13.406px">
+   <text id="text14990" x="162.57104" y="325.7522" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan14988" x="162.57104" y="325.7522" font-family="sans-serif" font-size="13.406px" letter-spacing="-.068792px" stroke-width=".26458" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">0%</tspan></text>
+   <text id="text14994" x="246.13078" y="325.7522" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan14992" x="246.13078" y="325.7522" font-family="sans-serif" font-size="13.406px" letter-spacing="-.068792px" stroke-width=".26458" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">20%</tspan></text>
+   <text id="text14998" x="333.60748" y="325.7522" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan14996" x="333.60748" y="325.7522" font-family="sans-serif" font-size="13.406px" letter-spacing="-.068792px" stroke-width=".26458" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">40%</tspan></text>
+   <text id="text15002" x="420.25061" y="325.7522" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan15000" x="420.25061" y="325.7522" font-family="sans-serif" font-size="13.406px" letter-spacing="-.068792px" stroke-width=".26458" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">60%</tspan></text>
+   <text id="text15006" x="508.10593" y="325.7522" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan15004" x="508.10593" y="325.7522" font-family="sans-serif" font-size="13.406px" letter-spacing="-.068792px" stroke-width=".26458" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">80%</tspan></text>
+   <text id="text15010" x="590.70453" y="325.7522" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan15008" x="590.70453" y="325.7522" font-family="sans-serif" font-size="13.406px" letter-spacing="-.068792px" stroke-width=".26458" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">100%</tspan></text>
+  </g>
+  <text id="text15014" x="254.11958" y="23.665789" font-size="19.756px" font-weight="bold" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan15012" x="254.08519" y="23.665789" font-family="sans-serif" font-size="19.756px" font-weight="bold" letter-spacing="-.068792px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Problems encountered in open source</tspan></text>
+  <text id="text15018" x="254.71179" y="41.758793" font-size="12.7px" style="font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan15016" x="254.6774" y="41.758793" fill="#828282" font-family="sans-serif" font-size="12.7px" letter-spacing="-.068792px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="-1.27px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Source: opensourcesurvey.org</tspan></text>
+ </g>
+ <g id="layer5" transform="translate(9.4667 -9.525)" fill="#000000" font-family="sans-serif" font-size="15.522px" letter-spacing="0px" stroke-width=".26458" text-anchor="end" word-spacing="0px">
+  <text id="text16107" x="311.05505" y="87.024582" text-align="end" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan16105" x="311.05505" y="87.024582" stroke-width=".26458" text-align="end" text-anchor="end">Incomplete or confusiong documentation</tspan></text>
+  <text id="text16111" x="311.05505" y="129.88702" text-align="end" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan16109" x="311.05505" y="129.88702" stroke-width=".26458" text-align="end" text-anchor="end">Unresponsiveness</tspan></text>
+  <text id="text16134" x="311.05505" y="171.16147" text-align="end" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan16132" x="311.05505" y="171.16147" stroke-width=".26458" text-align="end" text-anchor="end">Dismissive responses</tspan></text>
+  <text id="text16138" x="311.05505" y="214.55255" text-align="end" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan16136" x="311.05505" y="214.55255" stroke-width=".26458" text-align="end" text-anchor="end">Conflict</tspan></text>
+  <text id="text16142" x="311.05505" y="256.35617" text-align="end" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan16140" x="311.05505" y="256.35617" stroke-width=".26458" text-align="end" text-anchor="end">Unexplained rejection</tspan></text>
+  <text id="text16146" x="311.05505" y="298.16098" text-align="end" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan id="tspan16144" x="311.05505" y="298.16098" stroke-width=".26458" text-align="end" text-anchor="end">Unwelcoming language or content</tspan></text>
+ </g>
 </svg>
