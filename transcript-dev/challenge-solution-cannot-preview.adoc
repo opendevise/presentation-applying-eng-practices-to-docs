@@ -1,26 +1,27 @@
 == Cannot Preview Site
 // TODO bootstrap author's environment
+// TODO a good README (so many docs projects have no README at all, like it's not something people need to know)
 // ci server carousel
 
 // Problem; Image
 Slide: _Possible image ideas: lost in the dark, can't figure out how to put up the tent, stuck under a tarp in the rain_
 
-When you join a project, the first thing you want to do, the first thing anyone wants to do, is run it and see if it works.
-After all, if you can't establish that it worked in the first place, how can you be sure whether your changes helped or hurt it?
+When you join a project, the first thing you want to do--the first thing anyone wants to do--is run it and see if it works.
+After all, if you can't establish that it worked in the first place, how can you be sure whether your changes helped or hurt?
 So you grab the project and you look for what?
 Of course, you look for a command you can execute to compile and run it.
-And you hope, no, you pray, that doesn't require a lot of steps.
-That command is a build.
-If set up correctly, you should just be able to satisfy a few prerequisites to run the build tool and the build tool should take care of the rest.
+In other words, a build.
+And you hope, no, you pray, that it works and doesn't require a lot of prerequisite steps.
+If set up correctly, you should just be able to check off a few items, run the build, and the build tool should handle the rest.
 
 I've seen a lot of documentation projects just consist of content, but no way to do anything with that content.
-I've seen others where there is a build, but the build doesn't work.
+I've seen others that have a build, but the build doesn't work.
 
 // Humor; Meme
 Slide: Meme for it works on my machine
 // SAW: I've got some possibilities for this so don't worry about it
 
-You know, the old, "it works on my machine".
+You know, the old, "`it works on my machine`".
 The really disheartening part is when you do get the build working only to find out that what it builds isn't even remotely the same as what's running in production.
 
 Here's an excerpt from a real documentation project (though I'll hide the name to protect the victims).
@@ -62,8 +63,8 @@ The benefit of a build is realized over the long run.
 
 Let me share another story with you of what I actually saw happen at a real company in Silicon Valley company.
 I was observing a writer work.
-We'll call her Kayla.
-Kayla was making some changes to an AsciiDoc document in Atom.
+We'll call her Linda.
+Linda was making some changes to an AsciiDoc document in Atom.
 After moving around some sections, she wanted to preview her work in the generated site.
 So she went hunting for her terminal, which she had closed so she had to reopen.
 Then she navigated back to the project directory.
@@ -90,15 +91,13 @@ Then she went through the whole manual process again of building the site, copyi
 Only to find out that she overwrote the wrong image.
 It was back to the drawing board once again.
 
-What can one really say after observing that other than "sis, do you even automate?"
+What can one really say after observing that other than "bro, sis, do you even automate?"
 Clearly this is no way to work.
 But what I'm telling you right now is this *is* how writers are working.
 It's madness.
-And it has to end.
 
 You know and I know that the reason for an automated build is to avoid these types of long turn around times.
-There has to be a better way.
-And each day we can work to make it better than the last.
+There's a better way and each day we can work to make it better than the last.
 Just think about the steps you had to perform when you started a project versus the fine-tuned development cycle you've got going today.
 You probably brag about how efficient you are.
 What would be the ideal case for the writer.
@@ -118,4 +117,4 @@ This practice comes right out of engineering, which means they are going to need
 
 Simply put, an automated build, and better yet, a containerized build, saves time.
 And time is money.
-If you want to keep writers motivated, and maximize the finite time they have to write, they shouldn't be getting stuck at step 0 and they shouldn't have to be spending most of their time acting like a human build process like Kayla.
+If you want to keep writers motivated, and maximize the finite time they have to write, they shouldn't be getting stuck at step 0 and they shouldn't have to be spending most of their time acting like a human build process like Linda.

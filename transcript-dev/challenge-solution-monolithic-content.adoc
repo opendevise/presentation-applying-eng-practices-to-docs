@@ -37,7 +37,7 @@ Only the people who are most likely to have to work together actually have to.
 Other documentation activity no longer has to be a distraction.
 
 In order to determine where documentation repositories should be split, and easy way is to go back to my rule from the previous challenge.
-"`Only files that are versioned together belong together`".
+"`Files that are versioned together go together`".
 Think about how you would version the documentation.
 Any time you find documentation that is versioned separately than other documentation => repository.
 If this still leaves you with too few repositories, you can just mirror the split in the software the documentation documents.
@@ -62,7 +62,7 @@ Most site generators make the huge assumption that all content is stored in a si
 But this is no excuse for a bad practice.
 Simply find a tool that knows how to take content from multiple repositories and branches or build one.
 In fact, that's something I'm currently working on with a new project named Antora.
-Before Antora start processing content, the first step in its pipeline is to go out and gather the content.
+Before Antora starts processing content, the first step in its pipeline is to go out and gather the content.
 That opens up a whole world of possibility for how to organize that content.
 
 Having a single repository for your documentation named documentation is a false designation.

@@ -22,7 +22,7 @@ What would be your reaction?
 
 Just as I suspected.
 You're horrified.
-(slide concept: 😱)
+(slide concept: No!)
 
 If this behavior is a no-no for development, why on earth do we let it happen for documentation?
 
@@ -46,6 +46,7 @@ Not so much.
 
 The key to working collaboratively is keeping the content in the system and storing it as plain text.
 A text-only format can be diffed, so there's no need for track changes.
+(show prose diff)
 The version control system gives you that for free.
 You can make your changes, then submit a pull request so those changes can be reviewed and merged by another writer, just like with the code.
 
