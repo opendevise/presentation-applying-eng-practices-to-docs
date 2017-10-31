@@ -11,3 +11,35 @@ twitterwidget.twitter-tweet
       border none
     .Tweet-brand, .tweet-InformationCircle, img.Emoji
       display none
+
+figure.image figcaption
+  font-size 3.5rem
+  position absolute
+  left 0
+  bottom 0
+  right 0
+  background-color rgba(0, 0, 0, 0.8)
+  color $text-invert
+  line-height 1
+  padding 0 2rem
+  height 7.5rem
+  display flex
+  align-items center
+
+.exampleblock
+  padding 0 2rem
+
+ul.swimlanes
+  display flex
+  flex-grow 1
+  width 100%
+  margin 0
+  li
+    flex 1 0 auto
+    display flex
+    justify-content center
+    align-items center
+    font-size 10rem
+    background-color #e0e0e0
+    &:nth-of-type(2n)
+      background-color #eee

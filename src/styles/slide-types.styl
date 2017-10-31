@@ -1,16 +1,80 @@
 .bespoke-slide
   &.title
-    background-color $c-black-bis
     padding 0 4rem
+    background-color $c-black-bis
+    &::before, &::after
+      font-family "FontAwesome"
+      color #3b3b3b
+      position absolute
+      line-height 1
+      z-index -1
+    //&::before
+    //  content "\f0f6"
+    //  font-size 18rem
+    //  top 0
+    //  right 2.5rem
+    &::after
+      content "\f085"
+      font-size 30rem
+      bottom -4rem
+      right -6rem
     h1
       color $text-invert
       font-size 5.5rem
       font-weight 600
       line-height 1.6
       text-align center
-      //text-shadow 1px 1px 5px rgba(0, 0, 0, .05)
+      margin-top -1rem
     footer
-      display none
+      position absolute
+      bottom 0
+      left 0
+      font-size 2rem
+      color #808080
+      line-height 1
+      padding 1.25rem 2rem
+    p
+      margin 0
+      > span + span::before
+        content '\2237'
+        font-size 0.8em
+        padding 0 1rem
+
+  &.quote
+    justify-content flex-end
+    &::after
+      content ''
+      background #191919
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      opacity 0.75
+      z-index -1
+    &.dev-resistance
+      background-position 0% 15%
+    &.docs-like-code::after
+      opacity 0.9
+    figure.quote
+      width 100%
+      color $text-invert
+      padding 0 5rem
+      font-weight 500
+      font-size 4rem
+      line-height 1.5
+      margin-bottom sh(8)
+      p
+        margin 0
+      figcaption
+        color #bdbdbd
+        font-size 2rem
+        font-weight 400
+        line-height 1
+        margin-top 1.5rem
+        &::before
+          content '—'
+          padding-right 0.5ex
 
   &.concept
     background-color #dbdbdb
@@ -26,7 +90,8 @@
     align-items flex-start
     justify-content flex-end
     h2
-      margin 0 0 sw(5) sw(5)
+      //margin 0 0 sw(5) sw(5)
+      margin 0 0 sw(2.5) sw(5)
       border-left 1rem solid #fff
       padding-left 0.75rem
       line-height 1
@@ -50,6 +115,13 @@
       width sw(50)
       line-height 0.8
     .line.prominence-1
+      color $c-prm
+
+  &.works-on-my-machine
+    .line.prominence-1
+      color #c0c0c0
+      margin-bottom 5rem
+    .line.prominence-2
       color $c-prm
 
   &.tweet
@@ -130,33 +202,41 @@
       pre
         margin 0
 
-  &.challenge
+  &.cannot-preview-site
+    perspective 1000px
+    justify-content flex-start
     h2
-      text-align right
+      color #30241d
+      text-align left
+      font-weight 400
+      width 10.5rem
+      border 3px inset #a59a88
+      padding .1em
+      transform rotateY(-8deg)
+      font-size 4rem
+      position relative
+      top 2.5rem
+      line-height 1.25
 
   &.broken-windows
     h2
+      text-align center
       font-size 6rem
       padding 0.25em
       color $c-white
       background-color hsla(200, 96%, 34%, 0.75)
 
-  &.broken-windows-takeaway
-    figure
-      position absolute
-      top 10rem
-      right 14rem
-      width sw(25)
-
   &.collaboration-is-unruly
     perspective 450px
     h2
+      text-align center
       font-size 6rem
       transform translateZ(-200px) rotateY(-60deg) rotateX(-2deg) rotateZ(6deg)
 
   &.versions-are-hard
     justify-content flex-start
     h2
+      text-align center
       font-size 6rem
       color $c-white
       text-shadow 5px 7px 2px $c-black-bis
@@ -169,6 +249,7 @@
     align-items flex-end
     justify-content flex-start
     h2
+      text-align right
       font-size 9.75rem
       color $c-white
       font-weight 300
@@ -179,12 +260,32 @@
     align-items flex-end
     justify-content flex-end
     h2
+      text-align right
       font-size 6.5rem
       font-weight 700
       color hsl(215, 10%, 98%)
       transform rotate(-53deg)
       margin 0 1rem 16.75rem 0
       text-shadow -1px 1px 0px hsl(215, 10%, 75%), -2px 1px 0px hsl(215, 10%, 74%), -3px 1px 0px hsl(215, 10%, 69%), -4px 1px 0px hsl(215, 10%, 69%), -5px 1px 0px hsl(215, 10%, 63%)
+
+  &.monolithic-content
+    justify-content flex-end
+    perspective 400px
+    h2
+      font-size 5rem
+      text-align center
+      //color $text-invert
+      color #fafafa
+      margin-bottom 1.5rem
+      transform rotateX(104deg) scaleY(2)
+      text-shadow 0 2px 10px #4E342E
+
+  &.broken-windows-takeaway
+    figure
+      position absolute
+      top 10rem
+      right 14rem
+      width sw(25)
 
   &.topic
     color $c-white
@@ -198,6 +299,9 @@
     h2
       font-size 5rem
       text-transform uppercase
+      text-align center
+      line-height 1.25
+      padding 0 sw(5)
 
   &.teach-them-git
     h2
@@ -223,6 +327,27 @@
 
   &.subject.textlint
     background-color #dbdbdb
+
+  &.software-monorepo
+    figure.image
+      display flex
+      align-items center
+      justify-content center
+      width 90%
+      border 0px solid #e0e0e0
+      padding 2rem 0
+      border-width 0 0 2px 0
+    img
+      max-width 100%
+
+  &.msg-in-inbox
+    table
+      background #efefef
+      border 1px solid #ddd
+      font-size 2rem
+    p.tableblock
+      margin 0
+      line-height 1
 
   &.credits
     h2

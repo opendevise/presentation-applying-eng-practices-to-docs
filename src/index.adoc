@@ -1,15 +1,21 @@
 = Applying Engineering Practices to Documentation
 Dan Allen
+:organization: OpenDevise
+:twitter: @mojavelinux
 :!sectids:
+:icons: font
 :imagesdir: images
 :source-highlighter: coderay
 :coderay-css: style
-:icons: font
+:docinfo: shared
 
+[.quote.dev-resistance]
 == !
 
+image::james-herbsleb.jpg[role=canvas]
+
 > The resistance to [writing] documentation among developers is well known and needs no emphasis.
-> -- James D Herbsleb
+> -- James D. Herbsleb PhD
 
 == !
 
@@ -27,12 +33,12 @@ image::problems-encountered-in-oss-chart-hi.svg[role=grow]
 <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-width="375">
 <p>A talented tech writer is worth as much as a talented developer. Good prose is no more or less complex to write than good code.</p>&mdash; Dan Allen ✊ (@mojavelinux) <a href="https://twitter.com/mojavelinux/status/831609585937088512">February 14, 2017</a></p>
 </blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ++++
 
 [.shout%slice%fit]
 == This is a  Call  to Engineers
 
+// TODO turn to grayscale
 [.practices]
 == !
 
@@ -55,9 +61,48 @@ image::problems-encountered-in-oss-chart-hi.svg[role=grow]
 //* Modularity
 //* Standard Process
 
+[.challenge.cannot-preview-site]
+== Can't Preview Site
+
+image::originals/lost-at-work.jpg[role=canvas]
+
+[.subtopic]
+== icon:file-text[] README
+
+[.shout.works-on-my-machine%slice%fit]
+== pass:[¯\_(ツ)_/¯]  It works  on my machine
+
+[.quote]
+== !
+
+> Docs are generated with DITA OT.
+> Technically, we have a forked version of DITA OT.
+> We know this exists but _don't quite know why it was forked_ and it was done without history.
+> That's a todo for later.
+> -- Source redacted to protect the victims
+
+== !
+
+image::aghast-ghost.jpg[,100%]
+
+[.topic]
+== Automated Build
+
+//[.topic]
+//== Container
+
+//[.topic]
+//== Branch Builds
+
+[.statement%slice]
+== Use an automated build  to onboard writers  and keep them motivated
+
+image::children-win.jpg[role=canvas]
+
 [.challenge.too-much-to-manage%slice]
 == Too Much  to Manage
 //== Too Much  to Cover
+//== Too Hard  to Handle
 
 image::lightbulbs.jpg[role=canvas]
 
@@ -121,22 +166,6 @@ deploy:
     branch: master
 ----
 
-[.code]
-== !
-
-//[source,yaml]
-.{blank}.travis.yml (Custom Deployment)
-----
-script: generate-site
-...
-deploy:
-  provider: script
-  script: aws s3 sync _site s3://acme-docs --delete
-  skip_cleanup: true
-  on:
-    branch: master
-----
-
 [.shout%slice%fit]
 == What Makes It  Fire?
 
@@ -164,20 +193,6 @@ image::webhook-delivery.png[,100%]
 == Automate Every Step&#58;  From Pushing Changes  to Publishing Them
 
 image::mountain-cable-car.jpg[role=canvas]
-
-[.challenge]
-== Can't Preview Site
-
-image::originals/lost-at-work.jpg[role=canvas]
-
-[.topic]
-== Automated Build
-
-//[.topic]
-//== Container
-
-//[.topic]
-//== Branch Builds
 
 [.challenge.broken-windows]
 == Broken Windows
@@ -338,26 +353,6 @@ cars {
 
 image::computer-help.svg[]
 
-== Unsorted Slides >>
-
-[.tweet]
-== !
-
-++++
-<blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-width="375">
-<p>i hate git i hate git i hate git i hate git i hate git</p>&mdash; Máirín Duffy (@mairin) <a href="https://twitter.com/mairin/status/922799825116106752">October 24, 2017</a></p>
-</blockquote>
-++++
-
-[.teach-them-git]
-== Teach Them Git
-
-image::professortocat.png[]
-
-//== !
-//
-//image::preview/turtle-on-wheels.jpg[,100%]
-
 [.challenge.versions-are-hard]
 == Versions are Hard
 
@@ -390,11 +385,37 @@ image::git-log.svg[,200]
 
 image::branching.svg[role=grow]
 
-[.challenge]
+[.statement%slice]
+== Let version control  manage versions  so you don't have to
+
+image::stuttgart-library.jpg[role=canvas]
+
+[.challenge.monolithic-content]
 == Monolithic Content
+
+image::rock-pile.jpg[role=canvas]
+
+[.software-monorepo]
+== !
+
+image::software-monorepo.png[,100%]
 
 [.topic]
 == Modularity
+
+== !
+
+[.swimlanes]
+* icon:user[]
+* icon:user[]
+* icon:user[]
+
+[.quote]
+== !
+
+> icon:object-group[] +
+> Files versioned together +
+> go together.
 
 [.code]
 == !
@@ -403,12 +424,21 @@ image::branching.svg[role=grow]
 ----
 content:
   sources:
-  - url: https://github.com/acme/solutions-docs.git
-  - url: /home/username/projects/core-docs
+  - url: https://github.com/acme/solution-docs.git
+  - url: /home/username/projects/server-docs
     branches: v2.5, v3.0, v3.1
   - url: git@github.com:acme/rest-client-docs.git
     branches: v2*
 ----
+
+== !
+
+Antora pipeline diagram
+
+[.statement%slice]
+== Split content  to make it easier to  maintain + reuse + remix
+
+image::wood-pile.jpg[role=canvas]
 
 [.challenge.collaboration-is-unruly]
 == Collaboration is Unruly
@@ -416,25 +446,102 @@ content:
 
 image::throw-papers.jpg[role=canvas]
 
+[.msg-in-inbox]
+== !
+
+[build=items]
+--
+[cols=">5,35,35,25"]
+|===
+|icon:paperclip[]
+|For your review...
+|\jr@acme-software.com
+|2017-10-31 03:45
+|===
+
+====
+I updated this source file to implement feature A and fix bug B.
+Can you merge it?
+
+-Jr
+
+icon:file-o[]
+====
+--
+
+== !
+
+video::no.mp4[role=grow-y]
+
 [.topic]
 == Integrated Contribution Workflow
+
+[.quote.docs-like-code]
+== !
+
+image::docs-like-code-book.jpg[role=canvas]
+
+> Kelly first edited the chapters individually by creating Word documents from the Markdown files, marking them up, and creating PDFs from them to make the tracked changes easier to read.
+
+[.quote.docs-like-code]
+== !
+
+image::docs-like-code-book.jpg[role=canvas]
+
+> Then, she created issues for each chapter's edits, and Diane and Anne made pull requests with the suggested edits.
+> Finally, Kelly edited the book as a whole, creating pull requests with final copy edits.
+> -- Docs Like Code
+
+== !
+
+.`git show --word-diff --color`
+image::diff-words.png[,100%]
+
+[.subtopic]
+== Code Review => Docs Review
 
 == !
 
 image::pull-request.png[,100%]
 
-[.credits]
-== Credits
+[.tweet]
+== !
 
-* http://opensourcesurvey.org
+++++
+<blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-width="375">
+<p>i hate git i hate git i hate git i hate git i hate git</p>&mdash; Máirín Duffy (@mairin) <a href="https://twitter.com/mairin/status/922799825116106752">October 24, 2017</a></p>
+</blockquote>
+++++
+
+[.teach-them-git]
+== Teach Them Git
+
+image::professortocat.png[]
+
+[.statement%slice]
+== Stay within the matrix  Apply code workflows  to documentation
+
+image::matrix.jpg[role=canvas]
+
+[.topic]
+== Thank You!
+
+[.credits]
+== Photo Credits
+
 * https://octodex.github.com/images/Professortocat_v2.png
-* https://www.pexels.com/photo/action-adventure-challenge-climb-449609/
-* https://www.pexels.com/photo/bright-bulbs-crowded-electric-light-383838/
-* https://www.pexels.com/photo/cable-car-above-snow-covered-mountain-119815/
+* https://pexels.com/photo/action-adventure-challenge-climb-449609/
+* https://pexels.com/photo/bright-bulbs-crowded-electric-light-383838/
+* https://pexels.com/photo/cable-car-above-snow-covered-mountain-119815/
 * https://pixabay.com/en/broken-glass-shattered-glass-broken-2208593/
-* https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/
-* https://www.pexels.com/photo/man-person-legs-grass-539/
-* https://www.pexels.com/photo/office-mail-business-work-8777/
+* https://pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/
+* https://pexels.com/photo/man-person-legs-grass-539/
+* https://pexels.com/photo/office-mail-business-work-8777/
 * https://pixabay.com/en/computer-hand-help-laptop-helping-2851285/
-* https://www.atlassian.com/git/tutorials/using-branches 
 * https://confluence.atlassian.com/display/STASH0311/Using+pull+requests+in+Stash
+* https://pixabay.com/en/ghostbusters-bonnet-ornament-1515156/
+* https://pixabay.com/en/children-win-success-video-game-593313/
+* https://giphy.com/gifs/the-office-no-steve-carell-12XMGIWtrHBl5e
+* https://pixabay.com/en/plateau-island-highlands-stones-891306/
+* https://pixabay.com/en/logs-wood-fire-chopped-wood-1149948/
+* https://pixabay.com/en/matrix-computer-hacker-code-2354492/

@@ -12,19 +12,41 @@ h1, h2, h3, h4, h5, h6
   &:not(.fit)
     letter-spacing -0.015em
 
+p
+  margin 1em 0 0 0
+
 ul
   margin 1em 0 0 0
   padding 0
   list-style none
 
-figure
+figure.grow
+  width 100%
+
+figure.video.grow-y
+  width 100%
+  display flex
+  justify-content center
+  background black
+  video
+    height sh(100)
+
+blockquote
   margin 0
-  &.grow
-    width 100%
 
 pre, code
   font-family 'Overpass Mono', monospace
   letter-spacing -0.015em
+
+table.spread
+  width 100%
+
+td, th
+  padding 0.5em
+
+em
+  font-style normal
+  color $c-prm
 
 .line
   display block
@@ -34,3 +56,10 @@ pre, code
 
 .has-text-centered
   text-align center
+
+.bespoke-overview .bespoke-active
+  outline 5px solid #f61c3b
+  outline-offset -5px
+
+.halign-right
+  text-align right
