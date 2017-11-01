@@ -12,20 +12,6 @@ twitterwidget.twitter-tweet
     .Tweet-brand, .tweet-InformationCircle, img.Emoji
       display none
 
-figure.image figcaption
-  font-size 3.5rem
-  position absolute
-  left 0
-  bottom 0
-  right 0
-  background-color rgba(0, 0, 0, 0.8)
-  color $text-invert
-  line-height 1
-  padding 0 2rem
-  height 7.5rem
-  display flex
-  align-items center
-
 .exampleblock
   padding 0 2rem
 
@@ -43,3 +29,40 @@ ul.swimlanes
     background-color #e0e0e0
     &:nth-of-type(2n)
       background-color #eee
+
+figure.image figcaption
+  font-size 3.5rem
+  position absolute
+  left 0
+  bottom 0
+  right 0
+  background-color rgba(0, 0, 0, 0.8)
+  color $text-invert
+  line-height 1
+  padding 0 2rem
+  height 7.5rem
+  display flex
+  align-items center
+
+figure.grow
+  flex-grow 1
+  display flex
+  align-items center
+  width 100%
+  img, svg
+    width 100%
+
+figure.image.grow-y-95
+  flex-grow 1
+  display flex
+  align-items center
+  img, svg
+    height sh(95)
+
+figure.video.grow-y
+  width 100%
+  display flex
+  justify-content center
+  background black
+  video
+    height sh(100)

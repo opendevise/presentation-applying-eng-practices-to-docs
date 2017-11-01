@@ -49,6 +49,7 @@ In the end, they end up costing the project less than if an engineer was tasked 
 What we want to do instead is learn to work together.
 To join forces.
 
+I'm here to make you aware of some things and hopefully inspire some action.
 So here's my call.
 (slide concept: this is a call)
 Writers aren't writing because they are caught up in engineering problems.

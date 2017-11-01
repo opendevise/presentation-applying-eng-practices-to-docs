@@ -19,12 +19,7 @@ image::james-herbsleb.jpg[role=canvas]
 
 == !
 
-image::problems-encountered-in-oss-chart.svg[role=grow]
-
-// TODO callout the 93% with a bubble
-== !
-
-image::problems-encountered-in-oss-chart-hi.svg[role=grow]
+image::oss-problems-chart.svg[role=grow,opts=inline]
 
 [.tweet]
 == !
@@ -64,7 +59,7 @@ image::problems-encountered-in-oss-chart-hi.svg[role=grow]
 [.challenge.cannot-preview-site]
 == Can't Preview Site
 
-image::originals/lost-at-work.jpg[role=canvas]
+image::lost-at-work.jpg[role=canvas]
 
 [.subtopic]
 == icon:file-text[] README
@@ -106,17 +101,70 @@ image::children-win.jpg[role=canvas]
 
 image::lightbulbs.jpg[role=canvas]
 
+[.smarter-not-harder%slice]
+== Smarter  [.small]#not# harder
+
+[.code]
+== !
+
+//[source,asciidoc]
+----
+The latest version of {product-name} is
+{product-version}. You can download the
+distribution from {product-uri-download}.
+----
+
+[.code]
+== !
+
+//[source,yml]
+----
+asciidoc:
+  attributes:
+    product-name: Bootiful
+    product-version: 5.0
+    product-uri-download: >-
+      https://dl.acme-software.com/...
+----
+
+[.code]
+== !
+
+//[source,asciidoc]
+----
+= Bootiful Quickstart
+
+== What You'll Need
+
+\include::{commonsdir}/prereq_editor_jdk_build.adoc[]
+
+\include::{commonsdir}/how_to_complete_guide.adoc[]
+----
+
 [.topic]
 == D·R·Y
+
+[.docs-generation]
+== icon:recycle[] Docs Generation
+
+image::renewable-energy-sources.jpg[role=canvas]
+
+[%build]
+* release notes / changelog
+* REST API calls & parameters
+* reference tables
+ ** configuration properties
+ ** command arguments / env vars
+* screenshots
+* sample output
 
 [.topic]
 == N·D·I
 
-[%slice]
-== Smarter  not harder
+[.statement%slice]
+== Make up time and   reduce workload  by making docs DRY
 
-//[.topic]
-//== Code Generation
+image::hourglass.jpg[role=canvas]
 
 [.challenge.publishing-is-strenuous%slice]
 == Publishing  is Strenuous
@@ -221,7 +269,7 @@ icon:chain[]
 [%conceal.subject.textlint]
 == textlint
 
-image::logos/textlint-banner.png[,100%]
+image::logos/textlint-banner.png[role=grow]
 
 == What can we check for?
 
@@ -383,7 +431,7 @@ image::git-log.svg[,200]
 
 == !
 
-image::branching.svg[role=grow]
+image::git-branching.svg[role=grow]
 
 [.statement%slice]
 == Let version control  manage versions  so you don't have to
@@ -433,7 +481,7 @@ content:
 
 == !
 
-Antora pipeline diagram
+image::pipeline-aggregate-classify.svg[role=grow-y-95,opts=inline]
 
 [.statement%slice]
 == Split content  to make it easier to  maintain + reuse + remix
@@ -541,7 +589,9 @@ image::matrix.jpg[role=canvas]
 * https://confluence.atlassian.com/display/STASH0311/Using+pull+requests+in+Stash
 * https://pixabay.com/en/ghostbusters-bonnet-ornament-1515156/
 * https://pixabay.com/en/children-win-success-video-game-593313/
-* https://giphy.com/gifs/the-office-no-steve-carell-12XMGIWtrHBl5e
 * https://pixabay.com/en/plateau-island-highlands-stones-891306/
 * https://pixabay.com/en/logs-wood-fire-chopped-wood-1149948/
 * https://pixabay.com/en/matrix-computer-hacker-code-2354492/
+* https://pixabay.com/en/renewable-energy-environment-wind-1989416/
+* https://www.pexels.com/photo/clear-glass-with-red-sand-grainer-39396/
+//* https://giphy.com/gifs/the-office-no-steve-carell-12XMGIWtrHBl5e
