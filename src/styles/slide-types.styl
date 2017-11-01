@@ -4,7 +4,7 @@
     background-color $c-black-bis
     &::before, &::after
       font-family "FontAwesome"
-      color #3b3b3b
+      color $c-gray-darker
       position absolute
       line-height 1
       z-index -1
@@ -30,7 +30,7 @@
       bottom 0
       left 0
       font-size 2rem
-      color #808080
+      color $c-gray-light
       line-height 1
       padding 1.25rem 2rem
     p
@@ -46,7 +46,7 @@
     &.image
       &::after
         content ""
-        background linear-gradient(to bottom, rgba(25, 25, 25, 0.75) 0%, rgba(25, 25, 25, 0.75) 100%)
+        background rgba($c-black-ter, 0.75)
         position absolute
         top 0
         right 0
@@ -54,7 +54,7 @@
         left 0
         z-index -1
       &.docs-like-code::after
-        background linear-gradient(to bottom, rgba(25, 25, 25, 0.9) 0%, rgba(25, 25, 25, 0.9) 100%)
+        background rgba($c-black-ter, 0.9)
       figure.quote
         font-weight 500
     &.dev-resistance
@@ -69,7 +69,7 @@
       p
         margin 0
       figcaption
-        color #bdbdbd
+        color $c-gray-lightest
         font-size 2rem
         font-weight 400
         line-height 1
@@ -79,7 +79,7 @@
           padding-right 0.5ex
 
   &.concept
-    background-color #dbdbdb
+    //background-color $c-gray-lightest
     h2
       font-size 10rem
       margin 0
@@ -112,8 +112,7 @@
   &.shout
     text-transform uppercase
     h2
-      //color $c-gray
-      color #828282
+      color $c-gray-light
       width sw(50)
       line-height 0.8
     .line.prominence-1
@@ -121,7 +120,7 @@
 
   &.works-on-my-machine
     .line.prominence-1
-      color #c0c0c0
+      color $c-gray-lightest
       margin-bottom 5rem
     .line.prominence-2
       color $c-prm
@@ -186,9 +185,9 @@
       width 100%
       padding 1.25em 1em
       margin 0 1em
-      border 0.3333em solid #070707
+      border 0.3333em solid #0c0c0c
       border-radius 1em
-      box-shadow 0px 2px 0.5em #070707
+      box-shadow 0px 2px 0.5em #0c0c0c
       overflow hidden
     &.dense
       pre
@@ -295,7 +294,7 @@
  
   &.subtopic
     color $c-white
-    background-color $c-ter
+    background-color $c-qua
 
   &.topic, &.subtopic
     h2
@@ -318,7 +317,6 @@
       padding .25em .5em
       font-weight 600
       box-shadow 10px 10px 0px rgb(230, 231, 231)
-      //box-shadow 10px 10px 0px $c-gray-lighter
       font-size 3.5rem
     figure
       align-self flex-end
@@ -328,7 +326,7 @@
       max-width 100%
 
   &.subject.textlint
-    background-color #dbdbdb
+    background-color $c-gray-lightest
 
   &.software-monorepo
     figure.image
@@ -356,9 +354,9 @@
       font-size 10rem
       line-height 0.85
     .line:first-of-type
-      color #2e7d32
+      color $c-ter
     .small
-      color #808080
+      color $c-gray-light
       font-size 0.75em
       font-weight 400
       float left

@@ -3,18 +3,18 @@
 <g transform="matrix(.26458 0 0 .26458 -83.73 310.62)">
 <g stroke-width="4" stroke-miterlimit="10" stroke="#000">
 <path fill="none" d="m627.87-215.76 99.572 96.588h201.61" class="st6"/>
-<g fill="#03a9f4">
+<g fill="#2196f3">
 <circle transform="scale(1,-1)" class="st6" cy="119.17" cx="726.85999" r="21"/>
 <circle transform="scale(1,-1)" class="st6" cy="119.17" cx="826.85999" r="21"/>
 <circle transform="scale(1,-1)" class="st6" cy="119.17" cx="927.96997" r="21"/>
 </g>
-<g fill="#f44e03">
+<g fill="#ff5722">
 <path fill="none" d="m429.02-215.76 97.572-94.357h199.61" class="st6"/>
 <circle cy="-310.10999" cx="526.85999" r="21" class="st6"/>
 <circle cy="-310.10999" cx="726.85999" r="21" class="st6"/>
 </g>
 <path d="m339.26-215.76h689.62" class="st6"/>
-<g fill="#3beb95">
+<g fill="#b0bec5">
 <circle cy="-215.75999" cx="427.45999" r="21" class="st6"/>
 <circle cy="-215.75999" cx="526.85999" r="21" class="st6"/>
 <circle cy="-215.75999" cx="626.85999" r="21" class="st6"/>
