@@ -57,6 +57,13 @@ Not only does it cut out a bunch of steps, you're quite literally running the co
 That ensures no drift occurs between what the writers are working on and what's being published...and no unpleasant surprises when it gets published.
 Everyone is previewing the same way and therefore everyone has the same picture of how things look and work.
 
+****
+The popularization of Docker shows just how important these first few steps are.
+The entire point of Docker is to eliminate setup.
+Docker itself is not a complex service, but what it does do is remove key stumbling blocks right at the beginning, eliminating all chance of divergence / environment drift.
+That makes all the difference in the world.
+****
+
 A build is not just about saving time once.
 It's about saving time again and again.
 The benefit of a build is realized over the long run.
