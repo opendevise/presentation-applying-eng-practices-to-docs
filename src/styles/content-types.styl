@@ -7,7 +7,6 @@ twitterwidget.twitter-tweet
   &::shadow
     .EmbeddedTweet
       background-color transparent
-      //border-radius 0.75rem !important
       border none
     .Tweet-brand, .tweet-InformationCircle, img.Emoji
       display none
@@ -47,22 +46,16 @@ figure.image figcaption
 figure.grow
   flex-grow 1
   display flex
-  align-items center
+  //align-items center
   width 100%
-  img, svg
+  img, svg, video
     width 100%
 
-figure.image.grow-y-95
-  flex-grow 1
+figure.grow-y
   display flex
-  align-items center
-  img, svg
-    height sh(95)
-
-figure.video.grow-y
   width 100%
-  display flex
   justify-content center
-  background black
-  video
+  img, svg, video
     height sh(100)
+  &.video
+    background black

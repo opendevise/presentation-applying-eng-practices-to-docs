@@ -423,7 +423,7 @@ image::git-log.png[,100%]
 
 == !
 
-image::git-log.svg[,200]
+image::git-log.svg[role=grow-y]
 
 //== !
 //
@@ -481,7 +481,7 @@ content:
 
 == !
 
-image::pipeline-aggregate-classify.svg[role=grow-y-95,opts=inline]
+image::pipeline-aggregate-classify.svg[role=grow-y,opts=inline]
 
 [.statement%slice]
 == Split content  to make it easier to  maintain + reuse + remix
