@@ -551,7 +551,7 @@ image::diff-words.png[role=grow]
 image::prose-diff.png[role=grow]
 
 [.subtopic]
-== Code Review => Docs Review
+== Code Review == Docs Review
 
 == !
 
@@ -571,7 +571,7 @@ i hate git.
 image::professortocat.png[]
 
 [.statement%slice]
-== Stay within the matrix  Apply code workflows  to documentation
+== Stay in the matrix by  applying code workflows  to documentation
 
 image::matrix.jpg[role=canvas]
 
