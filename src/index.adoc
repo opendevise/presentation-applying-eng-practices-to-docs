@@ -543,7 +543,12 @@ image::docs-like-code-book.jpg[role=canvas]
 == !
 
 .`git show --word-diff --color`
-image::diff-words.png[,100%]
+image::diff-words.png[role=grow]
+
+== !
+
+.Prose Diff on GitHub
+image::prose-diff.png[role=grow]
 
 [.subtopic]
 == Code Review => Docs Review
