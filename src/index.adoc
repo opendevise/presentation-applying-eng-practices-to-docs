@@ -557,14 +557,13 @@ image::prose-diff.png[role=grow]
 
 image::pull-request.png[,100%]
 
-[.tweet]
 == !
 
-++++
-<blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-width="375">
-<p>i hate git i hate git i hate git i hate git i hate git</p>&mdash; Máirín Duffy (@mairin) <a href="https://twitter.com/mairin/status/922799825116106752">October 24, 2017</a></p>
-</blockquote>
-++++
+[%hardbreaks]
+i hate git.
+i hate git.
+i hate git.
+i hate git.
 
 [.teach-them-git]
 == Teach Them Git
